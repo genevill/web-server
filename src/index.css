@@ -1,13 +1,204 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --dark-color: rgba(33, 37, 41, 1);
+  --light-color: rgba(248, 249, 250, 1)
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+* {
+  color: var(--light-color);
+  font-family: verdana, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background-color: var(--dark-color);
+}
+
+.grid-container {
+  display: grid;
+  gap: 1px 1px;
+  background: black;
+}
+
+#break-label {
+  grid-area: 1 / 1 / span 1 / span 3;
+  margin: auto;
+}
+
+#session-label {
+  grid-area: 1 / 4 / span 1 / span 3;
+  margin: auto;   
+}
+
+#session-increment {
+  grid-area: 2 / 6 / span 1 / span 1;
+  margin: auto 5px auto 5px;   
+}
+#session-decrement {
+  grid-area: 2 / 4 / span 1 / span 1;
+  margin: auto 5px auto 5px;   
+}
+#break-increment {
+  grid-area: 2 / 3 / span 1 / span 1;
+  margin: auto 5px auto 5px;   
+}
+#break-decrement {
+  grid-area: 2 / 1 / span 1 / span 1;
+  margin: auto 5px auto 5px;   
+}
+
+#break-length {
+  grid-area: 2 / 2 / span 1 / span 1;
+  margin: auto 5px auto 5px;   
+}
+
+#session-length {
+  grid-area: 2 / 5 / span 1 / span 1;
+  margin: auto 5px auto 5px;   
+}
+
+#timer-label {
+  grid-area: 3 / 1 / span 1 / span 6;
+  margin: auto;
+}
+
+#time-left {
+  grid-area: 4 / 1 / span 1 / span 6;
+  margin: auto;   
+}
+
+#start-stop-reset {
+  grid-area: 5 / 1 / span 1 / span 6;
+  margin: auto;   
+}
+
+.button {
+  margin: auto;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-family: Arial;
+  color: black;
+}
+
+.box {
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  background-color: dimgray;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px black;
+  margin: 10px;
+}
+
+@media only screen and (max-width: 720px) {
+  a {
+    font-size: 0.8rem;
+  }
+  
+  h1 {
+    font-size: 1.2rem;
+  }
+  
+  #about-me img {
+    width: 100px;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  a {
+    font-size: 1rem;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  #about-me img {
+    width: 200px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: var(--light-color);
+  color: black;
+}
+
+.navbar {
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  top: 0.5rem;
+  text-align: right;
+  right: 1rem;
+}
+
+nav a {
+  margin: 0.5rem;
+}
+
+#welcome-section {
+  height: auto;
+  padding: 1rem;
+}
+
+#about-me {
+  height: auto;
+  padding: 1rem;
+}
+
+.about-me-sub {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-me-div {
+  margin: 1rem;
+}
+
+.about-me-div:nth-of-type(2) {
+  display: grid;
+}
+
+.about-me-div:nth-of-type(2) a {
+  margin: 1rem;
+}
+
+#about-me img {
+  border-radius: 50%;
+}
+
+#projects {
+  height: auto;
+  padding: 1rem;
+}
+
+#coding-challenges {
+  height: 100vh;
+  padding: 1rem;
+}
+
+.center {
+  text-align: center;
 }
