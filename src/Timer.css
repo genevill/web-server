@@ -73,4 +73,6 @@
 #start-stop-reset {
     grid-area: 5 / 1 / span 1 / span 6;
     margin: auto;
+    display: grid;
+    grid-template-columns: auto; 
 }
