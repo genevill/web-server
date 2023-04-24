@@ -109,7 +109,7 @@ export const TimerApp = () => {
             <Text id="session-length" text="25" />
             <Text id="timer-label" text="Session" />
             <SessionTimer id="time-left" />
-            <div id="start-stop-reset">
+            <div id="start-stop-reset grid-container">
                 <TimerButton id="start_stop" text="⏵⏸" function={PlayPause} />
                 <TimerButton id="reset" text="↺" function={Reset} />
                 <AudioElement />
