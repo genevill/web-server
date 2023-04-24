@@ -11,21 +11,29 @@
 #session-increment {
     grid-area: 2 / 6 / span 1 / span 1;
     margin: auto 5px auto 5px;
+    background-color: white;
+    color: black;
 }
 
 #session-decrement {
     grid-area: 2 / 4 / span 1 / span 1;
     margin: auto 5px auto 5px;
+    background-color: white;
+    color: black;
 }
 
 #break-increment {
     grid-area: 2 / 3 / span 1 / span 1;
     margin: auto 5px auto 5px;
+    background-color: white;
+    color: black;
 }
 
 #break-decrement {
     grid-area: 2 / 1 / span 1 / span 1;
     margin: auto 5px auto 5px;
+    background-color: white;
+    color: black;
 }
 
 #break-length {
