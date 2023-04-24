@@ -7,12 +7,6 @@
     user-select: none;
 }
 
-body {
-    display: grid;
-    place-items: center;
-    background-color: pink;
-}
-
 .button {
     border: none;
     background-color: rgba(0,0,0,0);
