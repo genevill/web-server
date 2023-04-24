@@ -84,11 +84,6 @@
     width: 500px;
 }
 
-img {
-    width: 100%;
-    height: auto;
-}
-
 table, th, td {
     border: 1px solid;
     border-collapse: collapse;
