@@ -10,7 +10,7 @@
 
 #session-increment {
     grid-area: 2 / 6 / span 1 / span 1;
-    margin: 5px 2px auto 2px;
+    margin: 5px 4px auto 4px;
     background-color: white;
     color: black;
     border-radius: 15px;
@@ -19,7 +19,7 @@
 
 #session-decrement {
     grid-area: 2 / 4 / span 1 / span 1;
-    margin: 5px 2px auto 2px;
+    margin: 5px 4px auto 4px;
     background-color: white;
     color: black;
     border-radius: 15px;
@@ -28,7 +28,7 @@
 
 #break-increment {
     grid-area: 2 / 3 / span 1 / span 1;
-    margin: 5px 2px auto 2px;
+    margin: 5px 4px auto 4px;
     background-color: white;
     color: black;
     border-radius: 15px;
@@ -37,7 +37,7 @@
 
 #break-decrement {
     grid-area: 2 / 1 / span 1 / span 1;
-    margin: 5px 2px auto 2px;
+    margin: 5px 4px auto 4px;
     background-color: white;
     color: black;
     border-radius: 15px;
@@ -46,7 +46,7 @@
 
 #start_stop {
     grid-area: 1 / 1 / span 1 / span 1;
-    margin: 5px 2px auto 2px;
+    margin: 5px 4px auto 4px;
     background-color: white;
     color: black;
     border-radius: 15px;
@@ -55,7 +55,7 @@
 
 #reset {
     grid-area: 1 / 2 / span 1 / span 1;
-    margin: 5px 2px auto 2px;
+    margin: 5px 4px auto 4px;
     background-color: white;
     color: black;
     border-radius: 15px;
