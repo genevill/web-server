@@ -14,6 +14,7 @@
     background-color: white;
     color: black;
     vertical-align: middle;
+    line-height: 5;
 }
 
 #session-decrement {
