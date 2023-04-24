@@ -1,3 +1,5 @@
+import './Calculator.css';
+
 //---Calculator--------------------------------------------------------
 
 var displayString = "0";
