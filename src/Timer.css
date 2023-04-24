@@ -87,12 +87,13 @@
     margin: auto;
     display: grid;
     grid-template-columns: auto;
-    gap: 1px 1px;
+    gap: 4px 4px;
 }
 
 #buttonimg {
     max-width: auto;
     max-height: 15px;
+    margin: 3px;
 }
 
 .grid-container-timer {
