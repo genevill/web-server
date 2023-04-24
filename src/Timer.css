@@ -7,6 +7,12 @@
     user-select: none;
 }
 
+body {
+    display: grid;
+    place-items: center;
+    background-color: var(--dark-color);
+}
+
 .grid-container {
     display: grid;
     gap: 1px 1px;
