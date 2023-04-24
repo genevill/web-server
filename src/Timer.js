@@ -90,7 +90,7 @@ function SessionFormat() {
     )
 }
 const TimerButton = props => {
-    return (<button class="button unselectable" id={props.id} onClick={props.function}>{props.image}</button>)
+    return (<button class="button unselectable" id={props.id} onClick={props.function}><img id="buttonimg" src={props.image} /></button>)
 }
 
 const Text = props => {
