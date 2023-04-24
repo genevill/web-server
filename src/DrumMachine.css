@@ -1,3 +1,8 @@
+:root {
+    --dark-color: rgba(33, 37, 41, 1);
+    --light-color: rgba(248, 249, 250, 1)
+}
+
 .unselectable {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
