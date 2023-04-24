@@ -165,3 +165,7 @@
     grid-row-end: 8;
     background: slategray;
 }
+
+.buttonpadding {
+    padding: 25px 35px 25px 35px;
+}

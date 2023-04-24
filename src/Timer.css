@@ -13,6 +13,7 @@
     margin: auto;
     background-color: white;
     color: black;
+    vertical-align: middle;
 }
 
 #session-decrement {
@@ -20,6 +21,7 @@
     margin: auto;
     background-color: white;
     color: black;
+    vertical-align: middle;
 }
 
 #break-increment {
@@ -27,6 +29,7 @@
     margin: auto;
     background-color: white;
     color: black;
+    vertical-align: middle;
 }
 
 #break-decrement {
@@ -34,6 +37,7 @@
     margin: auto;
     background-color: white;
     color: black;
+    vertical-align: middle;
 }
 
 #start_stop {
@@ -41,6 +45,7 @@
     margin: auto;
     background-color: white;
     color: black;
+    vertical-align: middle;
 }
 
 #reset {
@@ -48,6 +53,7 @@
     margin: auto;
     background-color: white;
     color: black;
+    vertical-align: middle;
 }
 
 #break-length {

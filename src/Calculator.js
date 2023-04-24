@@ -15,7 +15,7 @@ var buttonNames = [
 ]
 
 const Button = props => {
-    return (<button class="button unselectable" id={idNames[buttonNames.indexOf(props.text)]} onClick={() => {
+    return (<button class="button buttonpadding unselectable" id={idNames[buttonNames.indexOf(props.text)]} onClick={() => {
         if (/[0-9]/.test(props.text)) {
             if (/\-0/.test(displayString)) {
                 displayString = displayString.replace("0", "");
