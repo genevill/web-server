@@ -11,8 +11,8 @@ var myTimer;
 var upCaret = "https://storage.cloud.google.com/genevill/383167_caret_up_icon.png";
 var downCaret = "https://storage.cloud.google.com/genevill/383170_caret_down_icon.png";
 var refresh = "https://storage.cloud.google.com/genevill/383083_refresh_reload_icon.png";
-var play = "https://storage.cloud.google.com/genevill/383090_play_icon.png";
-var pause = "https://storage.cloud.google.com/genevill/383096_pause_icon.png";
+var playPause = "https://storage.cloud.google.com/genevill/play-pause.png";
+
 
 const Timer = () => {
     onSession == true ? currentSession-- : currentBreak--;
@@ -120,7 +120,7 @@ export const TimerApp = () => {
             <Text id="timer-label" text="Session" />
             <SessionTimer id="time-left" />
             <div id="start-stop-reset">
-                <TimerButton id="start_stop" image={play} function={PlayPause} />
+                <TimerButton id="start_stop" image={playPause} function={PlayPause} />
                 <TimerButton id="reset" image={refresh} function={Reset} />
                 <AudioElement />
             </div>
