@@ -37,7 +37,7 @@ function App() {
             <a href="./project-link">Project Link</a>
             <TimerApp />
             <CalculatorApp />
-            <DrumApp />
+            s
         </section>
         <section class="center" id="coding-challenges">
           <h1>Coding Challenges</h1>
