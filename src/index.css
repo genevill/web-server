@@ -1,0 +1,113 @@
+:root {
+    --dark-color: rgba(33, 37, 41, 1);
+    --light-color: rgba(248, 249, 250, 1)
+}
+
+* {
+    color: var(--light-color);
+    font-family: verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--dark-color);
+}
+
+@media only screen and (max-width: 720px) {
+    a {
+        font-size: 0.8rem;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    #about-me img {
+        width: 100px;
+    }
+}
+
+@media only screen and (min-width: 720px) {
+    a {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #about-me img {
+        width: 200px;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+    a:hover {
+        background-color: var(--light-color);
+        color: black;
+    }
+
+.navbar {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    top: 0.5rem;
+    text-align: right;
+    right: 1rem;
+}
+
+nav a {
+    margin: 0.5rem;
+}
+
+#welcome-section {
+    height: auto;
+    padding: 1rem;
+}
+
+#about-me {
+    height: auto;
+    padding: 1rem;
+}
+
+.about-me-sub {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-me-div {
+    margin: 1rem;
+}
+
+.about-me-div:nth-of-type(2) {
+    display: grid;
+}
+
+.about-me-div:nth-of-type(2) a {
+    margin: 1rem;
+}
+
+#about-me img {
+    border-radius: 50%;
+}
+
+#projects {
+    height: auto;
+    padding: 1rem;
+}
+
+#coding-challenges {
+    height: 100vh;
+    padding: 1rem;
+}
+
+.center {
+    text-align: center;
+}
