@@ -1,6 +1,7 @@
 import './App.css';
 import { CalculatorApp } from './Calculator.js';
 import { TimerApp } from './Timer.js';
+import { DrumApp } from './DrumMachine.js';
 
 //----App----------------------------------------------------------------------
 
@@ -31,11 +32,12 @@ function App() {
           </div>
         </section>
         <section class="center" id="projects">
-          <h1 >Projects</h1>
-          <p class="project-tile">Project Tile</p>
-          <a href="./project-link">Project Link</a>
-          <TimerApp />
-	  <CalculatorApp />
+            <h1 >Projects</h1>
+            <p class="project-tile">Project Tile</p>
+            <a href="./project-link">Project Link</a>
+            <TimerApp />
+            <CalculatorApp />
+            <DrumApp />
         </section>
         <section class="center" id="coding-challenges">
           <h1>Coding Challenges</h1>
