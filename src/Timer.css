@@ -10,28 +10,28 @@
 
 #session-increment {
     grid-area: 2 / 6 / span 1 / span 1;
-    margin: auto;
+    margin: 5px auto;
     background-color: white;
     color: black;
 }
 
 #session-decrement {
     grid-area: 2 / 4 / span 1 / span 1;
-    margin: auto;
+    margin: 5px auto;
     background-color: white;
     color: black;
 }
 
 #break-increment {
     grid-area: 2 / 3 / span 1 / span 1;
-    margin: auto;
+    margin: 5px auto;
     background-color: white;
     color: black;
 }
 
 #break-decrement {
     grid-area: 2 / 1 / span 1 / span 1;
-    margin: auto;
+    margin: 5px auto;
     background-color: white;
     color: black;
 }
@@ -62,7 +62,7 @@
 
 #timer-label {
     grid-area: 3 / 1 / span 1 / span 6;
-    margin: auto;
+    margin: 5px auto;
 }
 
 #time-left {
@@ -78,12 +78,7 @@
     gap: 1px 1px;
 }
 
-.centertext {
-    vertical-align: middle;
-    line-height: 10px;
-}
-
 #buttonimg {
     max-width: auto;
-    max-height: 20px;
+    max-height: 15px;
 }

@@ -91,7 +91,7 @@ const TimerButton = props => {
 }
 
 const Text = props => {
-    return (<p class="unselectable centertext" id={props.id}>{props.text}</p>)
+    return (<p class="unselectable" id={props.id}>{props.text}</p>)
 }
 
 const SessionTimer = props => {
