@@ -1,7 +1,6 @@
 import './App.css';
 import { CalculatorApp } from './Calculator.js';
 import { TimerApp } from './Timer.js';
-import { DrumApp } from './DrumMachine.js';
 
 //----App----------------------------------------------------------------------
 
@@ -37,7 +36,7 @@ function App() {
             <a href="./project-link">Project Link</a>
             <TimerApp />
             <CalculatorApp />
-            s
+
         </section>
         <section class="center" id="coding-challenges">
           <h1>Coding Challenges</h1>
