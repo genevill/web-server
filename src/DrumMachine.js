@@ -84,6 +84,3 @@ export const DrumApp = () => {
         </div>
     );
 }
-
-ReactDOM.render(<App />,
-    document.getElementById("root"))
