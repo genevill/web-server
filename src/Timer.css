@@ -10,50 +10,56 @@
 
 #session-increment {
     grid-area: 2 / 6 / span 1 / span 1;
-    margin: 5px auto;
+    margin: 5px 2px auto 2px;
     background-color: white;
     color: black;
-    border-radius: 10px;
+    border-radius: 15px;
+    box-shadow: 1px 2px 5px;
 }
 
 #session-decrement {
     grid-area: 2 / 4 / span 1 / span 1;
-    margin: 5px auto;
+    margin: 5px 2px auto 2px;
     background-color: white;
     color: black;
-    border-radius: 10px;
+    border-radius: 15px;
+    box-shadow: 1px 2px 5px;
 }
 
 #break-increment {
     grid-area: 2 / 3 / span 1 / span 1;
-    margin: 5px auto;
+    margin: 5px 2px auto 2px;
     background-color: white;
     color: black;
-    border-radius: 10px;
+    border-radius: 15px;
+    box-shadow: 1px 2px 5px;
 }
 
 #break-decrement {
     grid-area: 2 / 1 / span 1 / span 1;
-    margin: 5px auto;
+    margin: 5px 2px auto 2px;
     background-color: white;
     color: black;
-    border-radius: 10px;
+    border-radius: 15px;
+    box-shadow: 1px 2px 5px;
 }
 
 #start_stop {
     grid-area: 1 / 1 / span 1 / span 1;
-    margin: auto;
+    margin: 5px 2px auto 2px;
     background-color: white;
     color: black;
-    border-radius: 10px;
+    border-radius: 15px;
+    box-shadow: 1px 2px 5px;
 }
 
 #reset {
     grid-area: 1 / 2 / span 1 / span 1;
-    margin: auto;
+    margin: 5px 2px auto 2px;
     background-color: white;
     color: black;
-    border-radius: 10px;
+    border-radius: 15px;
+    box-shadow: 1px 2px 5px;
 }
 
 #break-length {
