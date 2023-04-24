@@ -50,10 +50,10 @@ a {
     text-decoration: none;
 }
 
-    a:hover {
-        background-color: var(--light-color);
-        color: black;
-    }
+a:hover {
+    background-color: var(--light-color);
+    color: black;
+}
 
 .navbar {
     position: fixed;

@@ -61,7 +61,7 @@ const Increase = props => {
         currentSession = sessionLength * 60;
         currentBreak = breakLength * 60;
         document.getElementById("time-left").innerHTML = SessionFormat();
-    }}><img src={upCaret} /></button>)
+    }}><img id="buttonimg" src={upCaret} /></button>)
 }
 
 const Decrease = props => {
@@ -72,7 +72,7 @@ const Decrease = props => {
         currentSession = sessionLength * 60;
         currentBreak = breakLength * 60;
         document.getElementById("time-left").innerHTML = SessionFormat();
-    }}><img src={downCaret} /></button>)
+    }}><img id="buttonimg" src={downCaret} /></button>)
 }
 
 function SessionFormat() {
