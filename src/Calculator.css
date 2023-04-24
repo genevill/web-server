@@ -9,7 +9,7 @@
 
 .button {
     border: none;
-    background-color: white;
+    background-color: rgba(0,0,0,0);
     margin: auto;
     cursor: pointer;
     width: 100%;
