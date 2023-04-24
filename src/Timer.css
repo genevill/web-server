@@ -10,7 +10,7 @@
 
 #session-increment {
     grid-area: 2 / 6 / span 1 / span 1;
-    margin: 5px 4px auto 4px;
+    margin: auto;
     background-color: white;
     color: black;
     border-radius: 15px;
@@ -19,7 +19,7 @@
 
 #session-decrement {
     grid-area: 2 / 4 / span 1 / span 1;
-    margin: 5px 4px auto 4px;
+    margin: auto;
     background-color: white;
     color: black;
     border-radius: 15px;
@@ -28,7 +28,7 @@
 
 #break-increment {
     grid-area: 2 / 3 / span 1 / span 1;
-    margin: 5px 4px auto 4px;
+    margin: auto;
     background-color: white;
     color: black;
     border-radius: 15px;
@@ -37,7 +37,7 @@
 
 #break-decrement {
     grid-area: 2 / 1 / span 1 / span 1;
-    margin: 5px 4px auto 4px;
+    margin: auto;
     background-color: white;
     color: black;
     border-radius: 15px;
@@ -46,7 +46,7 @@
 
 #start_stop {
     grid-area: 1 / 1 / span 1 / span 1;
-    margin: 5px 4px auto 4px;
+    margin: auto;
     background-color: white;
     color: black;
     border-radius: 15px;
@@ -55,7 +55,7 @@
 
 #reset {
     grid-area: 1 / 2 / span 1 / span 1;
-    margin: 5px 4px auto 4px;
+    margin: auto;
     background-color: white;
     color: black;
     border-radius: 15px;
@@ -64,17 +64,17 @@
 
 #break-length {
     grid-area: 2 / 2 / span 1 / span 1;
-    margin: auto 5px auto 5px;
+    margin: auto;
 }
 
 #session-length {
     grid-area: 2 / 5 / span 1 / span 1;
-    margin: auto 5px auto 5px;
+    margin: auto;
 }
 
 #timer-label {
     grid-area: 3 / 1 / span 1 / span 6;
-    margin: 5px auto;
+    margin: auto;
 }
 
 #time-left {
@@ -93,4 +93,9 @@
 #buttonimg {
     max-width: auto;
     max-height: 15px;
+}
+
+.grid-container-timer {
+    display: grid;
+    gap: 2px 2px;
 }
