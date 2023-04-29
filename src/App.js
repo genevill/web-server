@@ -39,6 +39,8 @@ function App() {
             <TimerApp />
             <h1>Calculator App</h1>
             <CalculatorApp />
+            <h1>Drum App</h1>
+            <DrumApp />
 
         </section>
         <section class="center" id="coding-challenges">
