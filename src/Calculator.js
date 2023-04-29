@@ -132,26 +132,28 @@ const DisplayTotal = () => {
 
 export const CalculatorApp = () => {
     return (
-        <div class="grid-container box">
-            <div class="totaldisplay" id="totaldisplay"><DisplayTotal /></div>
-            <div class="itemdisplay"><Display text="0" /></div>
-            <div class="itemac"><Button text="AC" /></div>
-            <div class="itemdivide"><Button text="/" /></div>
-            <div class="itemtimes"><Button text="x" /></div>
-            <div class="itemminus"><Button text="-" /></div>
-            <div class="itemplus"><Button text="+" /></div>
-            <div class="itemequals"><Button text="=" /></div>
-            <div class="itemdot"><Button text="." /></div>
-            <div class="item0"><Button text="0" /></div>
-            <div class="item1"><Button text="1" /></div>
-            <div class="item2"><Button text="2" /></div>
-            <div class="item3"><Button text="3" /></div>
-            <div class="item4"><Button text="4" /></div>
-            <div class="item5"><Button text="5" /></div>
-            <div class="item6"><Button text="6" /></div>
-            <div class="item7"><Button text="7" /></div>
-            <div class="item8"><Button text="8" /></div>
-            <div class="item9"><Button text="9" /></div>
+        <div class="box">
+            <div class="grid-container box">
+                <div class="totaldisplay" id="totaldisplay"><DisplayTotal /></div>
+                <div class="itemdisplay"><Display text="0" /></div>
+                <div class="itemac"><Button text="AC" /></div>
+                <div class="itemdivide"><Button text="/" /></div>
+                <div class="itemtimes"><Button text="x" /></div>
+                <div class="itemminus"><Button text="-" /></div>
+                <div class="itemplus"><Button text="+" /></div>
+                <div class="itemequals"><Button text="=" /></div>
+                <div class="itemdot"><Button text="." /></div>
+                <div class="item0"><Button text="0" /></div>
+                <div class="item1"><Button text="1" /></div>
+                <div class="item2"><Button text="2" /></div>
+                <div class="item3"><Button text="3" /></div>
+                <div class="item4"><Button text="4" /></div>
+                <div class="item5"><Button text="5" /></div>
+                <div class="item6"><Button text="6" /></div>
+                <div class="item7"><Button text="7" /></div>
+                <div class="item8"><Button text="8" /></div>
+                <div class="item9"><Button text="9" /></div>
+            </div>
         </div>
     );
 }
