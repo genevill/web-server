@@ -74,7 +74,7 @@ const DrumPad = props => {
 
 export const DrumApp = () => {
     return (
-        <div class="box">
+        <div class="outer-box">
             <div id="drum-machine" class="drum-box">
                 <div class="row">
                     <DrumPads />

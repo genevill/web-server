@@ -133,6 +133,10 @@ nav a {
     box-shadow: 3px 3px 10px black;
 }
 
+.outer-box {
+    display: inline-block;
+}
+
 .grid-container {
     display: grid;
     gap: 1px 1px;

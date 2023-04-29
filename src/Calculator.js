@@ -132,7 +132,7 @@ const DisplayTotal = () => {
 
 export const CalculatorApp = () => {
     return (
-        <div class="box">
+        <div class="outer-box">
             <div class="grid-container box">
                 <div class="totaldisplay" id="totaldisplay"><DisplayTotal /></div>
                 <div class="itemdisplay"><Display text="0" /></div>

@@ -108,7 +108,7 @@ const AudioElement = props => {
 }
 export const TimerApp = () => {
     return (
-        <div class="box">
+        <div class="outer-box">
             <div class="box grid-container-timer">
                 <Text id="break-label" text="Break Length" />
                 <Text id="session-label" text="Session Length" />
