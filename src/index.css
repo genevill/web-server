@@ -117,7 +117,6 @@ nav a {
 .button {
     border: none;
     background-color: transparent;
-    margin: auto;
     cursor: pointer;
     width: 100%;
     height: 100%;
@@ -127,7 +126,6 @@ nav a {
 }
 
 .box {
-    display: contents;
     background-color: dimgray;
     padding: 10px;
     border-radius: 10px;
