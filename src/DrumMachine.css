@@ -1,13 +1,4 @@
-.unselectable {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-.box {
+.drum-box {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -17,51 +8,6 @@
     border-radius: 10px;
     box-shadow: 5px 7px 20px rosybrown;
     margin: 10px;
-}
-
-#box2 {
-    width: 700px;
-    margin: auto;
-    overflow: auto;
-    background-color: seashell;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 5px 7px 20px rosybrown;
-    margin: 10px;
-}
-
-#preview {
-    word-wrap: break-word;
-}
-
-#author {
-    align: right;
-    font-size: 10px;
-    text-align: right;
-}
-
-#parent {
-    width: 640px;
-    margin: auto;
-    display: grid;
-    place-items: center;
-}
-
-.row {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#text-box {
-    color: black;
-    display: block;
-    text-align: center;
-}
-
-.center-align {
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .drum-pad {
@@ -79,12 +25,14 @@
     box-shadow: 1px 2px 5px rosybrown;
 }
 
-#editor {
-    resize: vertical;
-    width: 500px;
+.row {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-table, th, td {
-    border: 1px solid;
-    border-collapse: collapse;
+#text-box {
+    color: black;
+    display: block;
+    text-align: center;
 }
