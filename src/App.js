@@ -21,11 +21,12 @@ function App() {
         <section class="center" id="about-me">
           <h1>About Me</h1>
           <div class="about-me-sub">
-            <div class="about-me-div">
-              <img src="https://github.com/genevill/genevill/blob/main/profilepic.JPG?raw=true" />
+            <div class="about-me-div unselectable">
+              <img class="unselectable"  src="https://github.com/genevill/genevill/blob/main/profilepic.JPG?raw=true" />
             </div>
             <div class="about-me-div">
               <a id="profile-link" href="https://www.freecodecamp.org/genevill" target="_blank">freeCodeCamp Portfolio</a>
+              <a id="profile-link" href="https://play.google.com/store/apps/dev?id=6083836623150592844" target="_blank">Google Developer Profile</a>
               <a id="profile-link" href="https://github.com/genevill" target="_blank">GitHub Portfolio</a>
             </div>
           </div>
@@ -34,7 +35,9 @@ function App() {
             <h1 >Projects</h1>
             <p class="project-tile">Project Tile</p>
             <a href="./project-link">Project Link</a>
+            <h1>Pomodoro Timer App</h1>
             <TimerApp />
+            <h1>Calculator App</h1>
             <CalculatorApp />
 
         </section>
