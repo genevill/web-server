@@ -126,6 +126,7 @@ nav a {
 }
 
 .box {
+    display: inline-block;
     background-color: dimgray;
     padding: 10px;
     border-radius: 10px;

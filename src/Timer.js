@@ -108,21 +108,23 @@ const AudioElement = props => {
 }
 export const TimerApp = () => {
     return (
-        <div class="box grid-container-timer">
-            <Text id="break-label" text="Break Length" />
-            <Text id="session-label" text="Session Length" />
-            <Decrease id="break-decrement" idValue="break-length" />
-            <Increase id="break-increment" idValue="break-length" />
-            <Increase id="session-increment" idValue="session-length" />
-            <Decrease id="session-decrement" idValue="session-length" />
-            <Text id="break-length" text="5" />
-            <Text id="session-length" text="25" />
-            <Text id="timer-label" text="Session" />
-            <SessionTimer id="time-left" />
-            <div id="start-stop-reset">
-                <TimerButton id="start_stop" image={playPause} function={PlayPause} />
-                <TimerButton id="reset" image={refresh} function={Reset} />
-                <AudioElement />
+        <div class="box">
+            <div class="box grid-container-timer">
+                <Text id="break-label" text="Break Length" />
+                <Text id="session-label" text="Session Length" />
+                <Decrease id="break-decrement" idValue="break-length" />
+                <Increase id="break-increment" idValue="break-length" />
+                <Increase id="session-increment" idValue="session-length" />
+                <Decrease id="session-decrement" idValue="session-length" />
+                <Text id="break-length" text="5" />
+                <Text id="session-length" text="25" />
+                <Text id="timer-label" text="Session" />
+                <SessionTimer id="time-left" />
+                <div id="start-stop-reset">
+                    <TimerButton id="start_stop" image={playPause} function={PlayPause} />
+                    <TimerButton id="reset" image={refresh} function={Reset} />
+                    <AudioElement />
+                </div>
             </div>
         </div>
     );
