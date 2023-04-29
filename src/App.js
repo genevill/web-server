@@ -1,6 +1,7 @@
 import './App.css';
 import { CalculatorApp } from './Calculator.js';
 import { TimerApp } from './Timer.js';
+import { DrumApp } from './DrumMachine.js';
 
 //----App----------------------------------------------------------------------
 
