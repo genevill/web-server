@@ -1,11 +1,13 @@
 #break-label {
     grid-area: 1 / 1 / span 1 / span 3;
-    margin auto;
+    margin: auto;
+    text-align: center;
 }
 
 #session-label {
     grid-area: 1 / 4 / span 1 / span 3;
     margin: auto;
+    text-align: center;
 }
 
 #session-increment {
@@ -67,21 +69,25 @@
 #break-length {
     grid-area: 2 / 2 / span 1 / span 1;
     margin: auto;
+    text-align: center;
 }
 
 #session-length {
     grid-area: 2 / 5 / span 1 / span 1;
     margin: auto;
+    text-align: center;
 }
 
 #timer-label {
     grid-area: 3 / 1 / span 1 / span 6;
     margin: auto;
+    text-align: center;
 }
 
 #time-left {
     grid-area: 4 / 1 / span 1 / span 6;
     margin: auto;
+    text-align: center;
 }
 
 #start-stop-reset {
