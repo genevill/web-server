@@ -15,6 +15,7 @@
 }
 
 .totaldisplay {
+    display: inline-block;
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 2;
@@ -23,6 +24,7 @@
 }
 
 .itemdisplay {
+    display: inline-block;
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 2;
@@ -31,6 +33,7 @@
 }
 
 .itemac {
+    display: inline-block;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 3;
@@ -39,6 +42,7 @@
 }
 
 .itemdivide {
+    display: inline-block;
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 3;
@@ -47,6 +51,7 @@
 }
 
 .itemtimes {
+    display: inline-block;
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 3;
@@ -55,6 +60,7 @@
 }
 
 .itemminus {
+    display: inline-block;
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 4;
@@ -63,6 +69,7 @@
 }
 
 .itemplus {
+    display: inline-block;
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 5;
@@ -71,6 +78,7 @@
 }
 
 .itemequals {
+    display: inline-block;
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 6;
@@ -79,6 +87,7 @@
 }
 
 .item1 {
+    display: inline-block;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 6;
@@ -87,6 +96,7 @@
 }
 
 .item2 {
+    display: inline-block;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 6;
@@ -95,6 +105,7 @@
 }
 
 .item3 {
+    display: inline-block;
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 6;
@@ -103,6 +114,7 @@
 }
 
 .item4 {
+    display: inline-block;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 5;
@@ -111,6 +123,7 @@
 }
 
 .item5 {
+    display: inline-block;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 5;
@@ -119,6 +132,7 @@
 }
 
 .item6 {
+    display: inline-block;
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 5;
@@ -127,6 +141,7 @@
 }
 
 .item7 {
+    display: inline-block;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 4;
@@ -135,6 +150,7 @@
 }
 
 .item8 {
+    display: inline-block;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 4;
@@ -143,6 +159,7 @@
 }
 
 .item9 {
+    display: inline-block;
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 4;
@@ -151,6 +168,7 @@
 }
 
 .item0 {
+    display: inline-block;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 7;
@@ -159,6 +177,7 @@
 }
 
 .itemdot {
+    display: inline-block;
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 7;
