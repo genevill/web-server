@@ -28,7 +28,7 @@ const drumLetters = ["Q", "W", "E", "A", "S", "D", "Z", "X", "C"];
 const keyCodes = [81, 87, 69, 65, 83, 68, 90, 88, 67];
 var noteIndex = 0;
 
-addEventListener("keydown", (event) => {
+document.addEventListener("keydown", (event) => {
     if (event.isComposing || event.keyCode === 229) {
         return;
     }
@@ -38,7 +38,7 @@ addEventListener("keydown", (event) => {
     }
 });
 
-addEventListener("keyup", (event) => {
+document.addEventListener("keyup", (event) => {
     EndSound();
 });
 
