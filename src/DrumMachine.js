@@ -42,30 +42,17 @@ document.addEventListener("keyup", (event) => {
     EndSound();
 });
 
-// Put these in seperate function instead of anonymous ones
-// since you will need them later to deregister the event
-function onPointerDown(event) { /** Do stuff here **/ }
-function onPointerHover(event) { /** Do stuff here **/ }
-function onPointerMove(event) { /** Do stuff here **/ }
-function onPointerUp(event) { EndSound(); }
+document.addEventListener("pointerup", (event) => {
+    EndSound();
+});
 
-// Add event listeners
-if (isEventSupported("onpointerdown")) {
-    document.addEventListener("pointerdown", onPointerDown, false);
-    document.addEventListener("pointermove", onPointerHover, false);
-    document.addEventListener("pointermove", onPointerMove, false);
-    document.addEventListener("pointerup", onPointerUp, false);
-} else if (isEventSupported("ontouchstart")) {
-    document.addEventListener("touchstart", onPointerDown, false);
-    document.addEventListener("touchmove", onPointerHover, false);
-    document.addEventListener("touchmove", onPointerMove, false);
-    document.addEventListener("touchend", onPointerUp, false);
-} else if (isEventSupported("onmousedown")) {
-    document.addEventListener("mousedown", onPointerDown, false);
-    document.addEventListener("mousemove", onPointerHover, false);
-    document.addEventListener("mousemove", onPointerMove, false);
-    document.addEventListener("mouseup", onPointerUp, false);
-}
+document.addEventListener("mouseup", (event) => {
+    EndSound();
+});
+
+document.addEventListener("touchend", (event) => {
+    EndSound();
+});
 
 const TextBox = () => {
     return <p id="drum-text-box" class="drum-unselectable">Sound Name</p>
