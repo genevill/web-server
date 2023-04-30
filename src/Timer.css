@@ -79,7 +79,7 @@
     box-shadow: 1px 2px 5px;
 }
 
-#timer-start_stop {
+#timer-start-stop {
     grid-area: 1 / 1 / span 1 / span 1;
     margin: auto 2px auto 2px;
     background-color: var(--text-color);
@@ -133,6 +133,6 @@
 
 #timer-buttonimg {
     max-width: auto;
-    max-height: auto;
+    max-height: 15px;
     margin: auto;
 }

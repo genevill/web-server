@@ -90,7 +90,7 @@ function SessionFormat() {
     )
 }
 const TimerButton = props => {
-    return (<button class="timer-button timer-unselectable" id={props.id} onClick={props.function}><img id="buttonimg" src={props.image} /></button>)
+    return (<button class="timer-button timer-unselectable" id={props.id} onClick={props.function}><img id="timer-buttonimg" src={props.image} /></button>)
 }
 
 const Text = props => {
@@ -121,7 +121,7 @@ export const TimerApp = () => {
                 <Text id="timer-timer-label" text="Session" />
                 <SessionTimer id="timer-time-left" />
                 <div id="timer-start-stop-reset">
-                    <TimerButton id="timer-start_stop" image={playPause} function={PlayPause} />
+                    <TimerButton id="timer-start-stop" image={playPause} function={PlayPause} />
                     <TimerButton id="timer-reset" image={refresh} function={Reset} />
                     <AudioElement />
                 </div>
