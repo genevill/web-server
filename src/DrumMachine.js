@@ -43,12 +43,12 @@ document.addEventListener("keyup", (event) => {
 });
 
 const TextBox = () => {
-    return <p id="text-box" class="unselectable">Sound Name</p>
+    return <p id="text-box" class="drum-unselectable">Sound Name</p>
 }
 
 const PlaySound = () => {
     EndSound();
-    document.getElementById(drumLetters[noteIndex]).getElementsByClassName("clip")[0].play();
+    document.getElementById(drumLetters[noteIndex]).getElementsByClassName("drum-clip")[0].play();
     document.getElementById("text-box").innerHTML = soundName[noteIndex];
     document.getElementById(drumLetters[noteIndex]).style.background = "indianred";
 }
@@ -68,18 +68,18 @@ const DrumPad = props => {
         PlaySound();
     }} >
         {props.text}
-        <audio class="clip" id={props.text} src={src[drumLetters.findIndex(letter => letter == props.text)]} type="audio/mp3" />
+        <audio class="drum-clip" id={props.text} src={src[drumLetters.findIndex(letter => letter == props.text)]} type="audio/mp3" />
     </button>)
 }
 
 export const DrumApp = () => {
     return (
-        <div class="outer-box">
+        <div class="drum-outer-box">
             <div id="drum-machine" class="drum-box">
-                <div class="row">
+                <div class="drum-row">
                     <DrumPads />
                 </div>
-                <div id="display" class="row">
+                <div id="display" class="drum-row">
                     <TextBox />
                 </div>
             </div>

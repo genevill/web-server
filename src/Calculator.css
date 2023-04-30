@@ -20,10 +20,10 @@
 
 .calc-box {
     display: inline-block;
-    background-color: dimgray;
+    background-color: var(--medium-color);
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 3px 3px 10px black;
+    box-shadow: 3px 3px 10px var(--dark-color2);
 }
 
 .calc-outer-box {
