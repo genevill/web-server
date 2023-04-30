@@ -7,7 +7,6 @@
 .timer-box {
     display: inline-block;
     background-color: dimgray;
-    padding: 10px;
     border-radius: 10px;
     box-shadow: 3px 3px 10px black;
 }
