@@ -42,7 +42,7 @@ document.addEventListener("keyup", (event) => {
     EndSound();
 });
 
-document.addEventListener("mouseup", (event) => {
+document.addEventListener("pointerup", (event) => {
     EndSound();
 });
 
