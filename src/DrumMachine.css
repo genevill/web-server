@@ -33,7 +33,7 @@
 }
 
 .drum-pad {
-    background-color: rosybrown;
+    background-color: var(--dark2-color);
     border: none;
     color: var(--text-color);
     padding: 30px 30px;

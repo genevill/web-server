@@ -32,7 +32,7 @@ document.addEventListener("keydown", (event) => {
     if (event.isComposing || event.keyCode === 229) {
         return;
     }
-    if (document.getElementById(drumLetters[keyCodes.findIndex(code => code == event.keyCode)]) != null && document.getElementById(drumLetters[keyCodes.findIndex(code => code == event.keyCode)]).getElementsByClassName("clip")[0] != null) {
+    if (document.getElementById(drumLetters[keyCodes.findIndex(code => code == event.keyCode)]) != null && document.getElementById(drumLetters[keyCodes.findIndex(code => code == event.keyCode)]).getElementsByClassName("drum-clip")[0] != null) {
         noteIndex = keyCodes.findIndex(code => code == event.keyCode);
         PlaySound();
     }
@@ -49,12 +49,12 @@ const TextBox = () => {
 const PlaySound = () => {
     EndSound();
     document.getElementById(drumLetters[noteIndex]).getElementsByClassName("drum-clip")[0].play();
-    document.getElementById("text-box").innerHTML = soundName[noteIndex];
-    document.getElementById(drumLetters[noteIndex]).style.background = "indianred";
+    document.getElementById("drum-text-box").innerHTML = soundName[noteIndex];
+    document.getElementById(drumLetters[noteIndex]).style.background = "#5E6A75";
 }
 
 const EndSound = () => {
-    drumLetters.map((current, index) => document.getElementById(drumLetters[index]).style.background = "rosybrown")
+    drumLetters.map((current, index) => document.getElementById(drumLetters[index]).style.background = "#213242")
 }
 
 const DrumPads = () => {
