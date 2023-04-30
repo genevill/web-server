@@ -42,18 +42,6 @@ document.addEventListener("keyup", (event) => {
     EndSound();
 });
 
-document.addEventListener("pointerup", (event) => {
-    EndSound();
-});
-
-document.addEventListener("mouseup", (event) => {
-    EndSound();
-});
-
-document.addEventListener("touchend", (event) => {
-    EndSound();
-});
-
 const TextBox = () => {
     return <p id="drum-text-box" class="drum-unselectable">Sound Name</p>
 }
