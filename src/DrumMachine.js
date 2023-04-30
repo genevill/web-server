@@ -51,20 +51,20 @@ function onPointerUp(event) { EndSound(); }
 
 // Add event listeners
 if (isEventSupported("onpointerdown")) {
-    domElement.addEventListener("pointerdown", onPointerDown, false);
-    domElement.addEventListener("pointermove", onPointerHover, false);
-    domElement.addEventListener("pointermove", onPointerMove, false);
-    domElement.addEventListener("pointerup", onPointerUp, false);
+    document.addEventListener("pointerdown", onPointerDown, false);
+    document.addEventListener("pointermove", onPointerHover, false);
+    document.addEventListener("pointermove", onPointerMove, false);
+    document.addEventListener("pointerup", onPointerUp, false);
 } else if (isEventSupported("ontouchstart")) {
-    domElement.addEventListener("touchstart", onPointerDown, false);
-    domElement.addEventListener("touchmove", onPointerHover, false);
-    domElement.addEventListener("touchmove", onPointerMove, false);
-    domElement.addEventListener("touchend", onPointerUp, false);
+    document.addEventListener("touchstart", onPointerDown, false);
+    document.addEventListener("touchmove", onPointerHover, false);
+    document.addEventListener("touchmove", onPointerMove, false);
+    document.addEventListener("touchend", onPointerUp, false);
 } else if (isEventSupported("onmousedown")) {
-    domElement.addEventListener("mousedown", onPointerDown, false);
-    domElement.addEventListener("mousemove", onPointerHover, false);
-    domElement.addEventListener("mousemove", onPointerMove, false);
-    domElement.addEventListener("mouseup", onPointerUp, false);
+    document.addEventListener("mousedown", onPointerDown, false);
+    document.addEventListener("mousemove", onPointerHover, false);
+    document.addEventListener("mousemove", onPointerMove, false);
+    document.addEventListener("mouseup", onPointerUp, false);
 }
 
 const TextBox = () => {
