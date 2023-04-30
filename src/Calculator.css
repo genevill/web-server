@@ -23,7 +23,7 @@
     background-color: var(--medium-color);
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 3px 3px 10px var(--dark-color2);
+    box-shadow: 3px 3px 10px black;
 }
 
 .calc-outer-box {

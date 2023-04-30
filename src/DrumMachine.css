@@ -15,7 +15,7 @@
     background-color: var(--medium-color);
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 5px 7px 20px var(--dark-color2);
+    box-shadow: 5px 7px 20px black;
     margin: 10px;
 }
 
