@@ -43,7 +43,7 @@ document.addEventListener("keyup", (event) => {
 });
 
 const TextBox = () => {
-    return <p id="text-box" class="drum-unselectable">Sound Name</p>
+    return <p id="drum-text-box" class="drum-unselectable">Sound Name</p>
 }
 
 const PlaySound = () => {
@@ -63,7 +63,7 @@ const DrumPads = () => {
 }
 
 const DrumPad = props => {
-    return (<button class="drum-pad unselectable" id={props.text} onClick={() => {
+    return (<button class="drum-pad drum-unselectable" id={props.text} onClick={() => {
         noteIndex = drumLetters.findIndex(letter => letter == props.text);
         PlaySound();
     }} >
