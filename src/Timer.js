@@ -18,17 +18,17 @@ const Timer = () => {
     onSession == true ? currentSession-- : currentBreak--;
     if (currentSession == -1) {
         onSession = false;
-        document.getElementById("timer-label").innerHTML = "Break";
+        document.getElementById("timer-timer-label").innerHTML = "Break";
         currentSession = sessionLength * 60;
-        document.getElementById("beep").play();
+        document.getElementById("timer-beep").play();
     }
     if (currentBreak == -1) {
         onSession = true;
-        document.getElementById("timer-label").innerHTML = "Session";
+        document.getElementById("timer-timer-label").innerHTML = "Session";
         currentBreak = breakLength * 60;
-        document.getElementById("beep").play();
+        document.getElementById("timer-beep").play();
     }
-    document.getElementById("time-left").innerHTML = SessionFormat();
+    document.getElementById("timer-time-left").innerHTML = SessionFormat();
 }
 
 const PlayPause = () => {
@@ -48,34 +48,34 @@ const Reset = () => {
     currentSession = sessionLength * 60;
     currentBreak = breakLength * 60;
     onSession = true;
-    document.getElementById("timer-label").innerHTML = "Session";
-    document.getElementById("session-length").innerHTML = sessionLength;
-    document.getElementById("break-length").innerHTML = breakLength;
-    document.getElementById("time-left").innerHTML = SessionFormat();
-    document.getElementById("beep").pause();
-    document.getElementById("beep").currentTime = 0;
+    document.getElementById("timer-timer-label").innerHTML = "Session";
+    document.getElementById("timer-session-length").innerHTML = sessionLength;
+    document.getElementById("timer-break-length").innerHTML = breakLength;
+    document.getElementById("timer-time-left").innerHTML = SessionFormat();
+    document.getElementById("timer-beep").pause();
+    document.getElementById("timer-beep").currentTime = 0;
 }
 
 const Increase = props => {
-    return (<button class="button unselectable" id={props.id} onClick={() => {
+    return (<button class="timer-button timer-unselectable" id={props.id} onClick={() => {
         props.idValue == "break-length" ? breakLength++ : sessionLength++;
         if (breakLength > 60) breakLength = 60; if (sessionLength > 60) sessionLength = 60;
         document.getElementById(props.idValue).innerHTML = (props.idValue == "break-length" ? breakLength : sessionLength);
         currentSession = sessionLength * 60;
         currentBreak = breakLength * 60;
         document.getElementById("time-left").innerHTML = SessionFormat();
-    }}><img id="buttonimg" src={upCaret} /></button>)
+    }}><img id="timer-buttonimg" src={upCaret} /></button>)
 }
 
 const Decrease = props => {
-    return (<button class="button unselectable" id={props.id} onClick={() => {
+    return (<button class="timer-button timer-unselectable" id={props.id} onClick={() => {
         props.idValue == "break-length" ? breakLength-- : sessionLength--;
         if (breakLength < 1) breakLength = 1; if (sessionLength < 1) sessionLength = 1;
         document.getElementById(props.idValue).innerHTML = (props.idValue == "break-length" ? breakLength : sessionLength);
         currentSession = sessionLength * 60;
         currentBreak = breakLength * 60;
         document.getElementById("time-left").innerHTML = SessionFormat();
-    }}><img id="buttonimg" src={downCaret} /></button>)
+    }}><img id="timer-buttonimg" src={downCaret} /></button>)
 }
 
 function SessionFormat() {
@@ -90,39 +90,39 @@ function SessionFormat() {
     )
 }
 const TimerButton = props => {
-    return (<button class="button unselectable" id={props.id} onClick={props.function}><img id="buttonimg" src={props.image} /></button>)
+    return (<button class="timer-button timer-unselectable" id={props.id} onClick={props.function}><img id="buttonimg" src={props.image} /></button>)
 }
 
 const Text = props => {
-    return (<p class="unselectable" id={props.id}>{props.text}</p>)
+    return (<p class="timer-unselectable" id={props.id}>{props.text}</p>)
 }
 
 const SessionTimer = props => {
-    return (<p class="unselectable" id={props.id}>{(currentSession / 60).toString().padStart(2, '0') + ":" + (currentSession % 60).toString().padStart(2, '0')}</p>)
+    return (<p class="timer-unselectable" id={props.id}>{(currentSession / 60).toString().padStart(2, '0') + ":" + (currentSession % 60).toString().padStart(2, '0')}</p>)
 }
 
 const AudioElement = props => {
-    return (<audio id="beep">
+    return (<audio id="timer-beep">
         <source src="https://storage.cloud.google.com/genevill/mixkit-clock-countdown-bleeps-916.wav" type="audio/wav" />
     </audio>)
 }
 export const TimerApp = () => {
     return (
-        <div class="outer-box">
-            <div class="box grid-container-timer">
-                <Text id="break-label" text="Break Length" />
-                <Text id="session-label" text="Session Length" />
-                <Decrease id="break-decrement" idValue="break-length" />
-                <Increase id="break-increment" idValue="break-length" />
-                <Increase id="session-increment" idValue="session-length" />
-                <Decrease id="session-decrement" idValue="session-length" />
-                <Text id="break-length" text="5" />
-                <Text id="session-length" text="25" />
-                <Text id="timer-label" text="Session" />
-                <SessionTimer id="time-left" />
-                <div id="start-stop-reset">
-                    <TimerButton id="start_stop" image={playPause} function={PlayPause} />
-                    <TimerButton id="reset" image={refresh} function={Reset} />
+        <div class="timer-outer-box">
+            <div class="timer-box timer-grid-container">
+                <Text id="timer-break-label" text="Break Length" />
+                <Text id="timer-session-label" text="Session Length" />
+                <Decrease id="timer-break-decrement" idValue="break-length" />
+                <Increase id="timer-break-increment" idValue="break-length" />
+                <Increase id="timer-session-increment" idValue="session-length" />
+                <Decrease id="timer-session-decrement" idValue="session-length" />
+                <Text id="timer-break-length" text="5" />
+                <Text id="timer-session-length" text="25" />
+                <Text id="timer-timer-label" text="Session" />
+                <SessionTimer id="timer-time-left" />
+                <div id="timer-start-stop-reset">
+                    <TimerButton id="timer-start_stop" image={playPause} function={PlayPause} />
+                    <TimerButton id="timer-reset" image={refresh} function={Reset} />
                     <AudioElement />
                 </div>
             </div>

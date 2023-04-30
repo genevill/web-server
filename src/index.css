@@ -1,10 +1,14 @@
 :root {
-    --dark-color: rgba(33, 37, 41, 1);
-    --light-color: rgba(248, 249, 250, 1)
+    --dark-color: #212529;
+    --dark2-color: #213242;
+    --medium-color: #5E6A75;
+    --light-color: #3B5875;
+    --light2-color: #9BAEC2;
+    --text-color: #f8f9ff;
 }
 
 * {
-    color: var(--light-color);
+    color: var(--text-color);
     font-family: verdana, sans-serif;
 }
 
