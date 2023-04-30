@@ -15,7 +15,7 @@ var buttonNames = [
 ]
 
 const Button = props => {
-    return (<button class="button buttonpadding unselectable" id={idNames[buttonNames.indexOf(props.text)]} onClick={() => {
+    return (<button class="calc-button calc-buttonpadding calc-unselectable" id={idNames[buttonNames.indexOf(props.text)]} onClick={() => {
         if (/[0-9]/.test(props.text)) {
             if (/\-0/.test(displayString)) {
                 displayString = displayString.replace("0", "");
@@ -33,22 +33,22 @@ const Button = props => {
                 totalString = totalString.replace(".", "")
             }
             displayString = "0";
-            document.getElementById("display").innerHTML = displayString;
+            document.getElementById("calc-display").innerHTML = displayString;
             UpdateDisplayTotal();
         } else if (/[\+/x]/.test(props.text) && /[\+\-/x]/.test(totalString.slice(totalString.length - 1, totalString.length))) {
             if (/\+/.test(props.text) && /\-/.test(displayString.slice(0))) {
                 displayString = displayString.slice(1);
             }
             totalString = totalString.slice(0, totalString.length - 1) + props.text;
-            document.getElementById("display").innerHTML = displayString;
+            document.getElementById("calc-display").innerHTML = displayString;
             UpdateDisplayTotal();
         } else if (/\-/.test(props.text) && !/\-/.test(displayString.slice(0)) && /[\+\-/x]/.test(totalString.slice(totalString.length - 1, totalString.length))) {
             displayString = "-" + displayString;
-            document.getElementById("display").innerHTML = displayString;
+            document.getElementById("calc-display").innerHTML = displayString;
             UpdateDisplayTotal();
         } else if (/\-/.test(props.text) && /\-/.test(displayString.slice(0))) {
             displayString = displayString.replace(/\-/, "");
-            document.getElementById("display").innerHTML = displayString;
+            document.getElementById("calc-display").innerHTML = displayString;
             UpdateDisplayTotal();
         }
         if (/\./.test(props.text) && !/\./.test(displayString) && displayString != 0) {
@@ -81,14 +81,14 @@ const Button = props => {
             }
             totalString += tempAnswer;
             displayString = tempAnswer;
-            document.getElementById("display").innerHTML = displayString;
+            document.getElementById("calc-display").innerHTML = displayString;
             UpdateDisplayTotal();
             totalString = "";
         }
         while (displayString.length > 1 && displayString.charAt(0) == "0") {
             displayString = displayString.replace(/^0/, "");
         }
-        document.getElementById("display").innerHTML = displayString;
+        document.getElementById("calc-display").innerHTML = displayString;
         //console.log(document.getElementById("display").innerHTML);
     }} >{props.text}</button>)
 }
@@ -114,45 +114,45 @@ function Math(operation, num1, num2) {
 }
 
 const Display = props => {
-    return (<p class="display-text" id="display">{props.text}</p>)
+    return (<p class="calc-display-text" id="calc-display">{props.text}</p>)
 }
 
 function UpdateDisplayTotal() {
-    if (totalString.length >= 1 && document.getElementById("totaldisplay") != null) {
-        document.getElementById("totaldisplay").style.gridRowStart = 1;
+    if (totalString.length >= 1 && document.getElementById("calc-totaldisplay") != null) {
+        document.getElementById("calc-totaldisplay").style.gridRowStart = 1;
     } else {
-        document.getElementById("totaldisplay").style.gridRowStart = 2;
+        document.getElementById("calc-totaldisplay").style.gridRowStart = 2;
     }
-    document.getElementById("totalString").innerHTML = totalString;
+    document.getElementById("calc-totalString").innerHTML = totalString;
 }
 
 const DisplayTotal = () => {
-    return (<p class="totalString" id="totalString">{totalString}</p>)
+    return (<p class="calc-totalString" id="calc-totalString">{totalString}</p>)
 }
 
 export const CalculatorApp = () => {
     return (
-        <div class="outer-box">
-            <div class="grid-container box">
-                <div class="totaldisplay" id="totaldisplay"><DisplayTotal /></div>
-                <div class="itemdisplay"><Display text="0" /></div>
-                <div class="itemac"><Button text="AC" /></div>
-                <div class="itemdivide"><Button text="/" /></div>
-                <div class="itemtimes"><Button text="x" /></div>
-                <div class="itemminus"><Button text="-" /></div>
-                <div class="itemplus"><Button text="+" /></div>
-                <div class="itemequals"><Button text="=" /></div>
-                <div class="itemdot"><Button text="." /></div>
-                <div class="item0"><Button text="0" /></div>
-                <div class="item1"><Button text="1" /></div>
-                <div class="item2"><Button text="2" /></div>
-                <div class="item3"><Button text="3" /></div>
-                <div class="item4"><Button text="4" /></div>
-                <div class="item5"><Button text="5" /></div>
-                <div class="item6"><Button text="6" /></div>
-                <div class="item7"><Button text="7" /></div>
-                <div class="item8"><Button text="8" /></div>
-                <div class="item9"><Button text="9" /></div>
+        <div class="calc-outer-box">
+            <div class="calc-grid-container calc-box">
+                <div class="calc-totaldisplay" id="calc-totaldisplay"><DisplayTotal /></div>
+                <div class="calc-itemdisplay"><Display text="0" /></div>
+                <div class="calc-itemac"><Button text="AC" /></div>
+                <div class="calc-itemdivide"><Button text="/" /></div>
+                <div class="calc-itemtimes"><Button text="x" /></div>
+                <div class="calc-itemminus"><Button text="-" /></div>
+                <div class="calc-itemplus"><Button text="+" /></div>
+                <div class="calc-itemequals"><Button text="=" /></div>
+                <div class="calc-itemdot"><Button text="." /></div>
+                <div class="calc-item0"><Button text="0" /></div>
+                <div class="calc-item1"><Button text="1" /></div>
+                <div class="calc-item2"><Button text="2" /></div>
+                <div class="calc-item3"><Button text="3" /></div>
+                <div class="calc-item4"><Button text="4" /></div>
+                <div class="calc-item5"><Button text="5" /></div>
+                <div class="calc-item6"><Button text="6" /></div>
+                <div class="calc-item7"><Button text="7" /></div>
+                <div class="calc-item8"><Button text="8" /></div>
+                <div class="calc-item9"><Button text="9" /></div>
             </div>
         </div>
     );
