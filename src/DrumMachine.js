@@ -41,7 +41,6 @@ document.addEventListener("keydown", (event) => {
 document.addEventListener("keyup", (event) => {
     EndSound();
 });
-
 document.addEventListener("pointerup", (event) => {
     EndSound();
 });
@@ -70,7 +69,7 @@ const DrumPads = () => {
 }
 
 const DrumPad = props => {
-    return (<button class="drum-pad drum-unselectable" id={props.text} onClick={() => {
+    return (<button class="drum-pad drum-unselectable" id={props.text} onMouseDown={() => {
         noteIndex = drumLetters.findIndex(letter => letter == props.text);
         PlaySound();
     }} >
