@@ -41,9 +41,7 @@ document.addEventListener("keydown", (event) => {
 document.addEventListener("keyup", (event) => {
     EndSound();
 });
-document.addEventListener("pointerup", (event) => {
-    EndSound();
-});
+
 document.addEventListener("mouseup", (event) => {
     EndSound();
 });
