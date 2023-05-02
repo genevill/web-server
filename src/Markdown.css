@@ -1,0 +1,53 @@
+#markdown-box1 {
+  width: 507px;
+  margin: auto;
+  overflow: auto;
+  h1 {
+    font-size: 20px;
+  };
+  background-color: grey;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 7px 20px black;
+  margin: 10px;
+}
+
+#markdown-box2 {
+  width: 700px;
+  margin: auto;
+  overflow: auto;
+  background-color: grey;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 7px 20px black;
+  margin: 10px;
+}
+
+#markdown-preview {
+  text-align: left;
+  word-wrap: break-word;
+}
+
+#markdown-parent {
+  width: 640px;
+  margin: auto;
+  place-items: center;
+  background-color: grey;
+}
+.markdown-row {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.markdown-center-align {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#markdown-editor {
+  resize: vertical;
+  width: 500px;
+  color: black;
+}
