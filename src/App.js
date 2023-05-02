@@ -2,6 +2,8 @@ import './App.css';
 import { CalculatorApp } from './Calculator.js';
 import { TimerApp } from './Timer.js';
 import { DrumApp } from './DrumMachine.js';
+import { QuoteApp } from './Quote.js';
+import { MarkdownApp } from './Markdown.js';
 
 //----App----------------------------------------------------------------------
 
@@ -42,6 +44,10 @@ function App() {
             <CalculatorApp />
             <h1>Drum App</h1>
             <DrumApp />
+            <h1>Markdown App</h1>
+            <MarkdownApp />
+            <h1>Quote App</h1>
+            <QuoteApp />
 
         </section>
         <section class="center" id="coding-challenges">
