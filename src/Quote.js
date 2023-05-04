@@ -21,14 +21,14 @@ const Title = props => (
 
 // Doesn't have to be ES6 if you don't want
 const Copy = props => {
-  return <p id="text-text">{props.text}</p>
+  return <p id="quote-text-text">{props.text}</p>
     }
 
 function NewQuoteButton() {
 //rand = (Math.floor(Math.random() * 5) * 2)
   return (<button class="quote-button" id="quote-new-quote" onClick = { () => { rand = (Math.floor(Math.random() * 5) * 2);
-  document.getElementById("text-text").innerHTML = quotes[rand];
-  document.getElementById("author-text").innerHTML = quotes[rand + 1];                                                                 } } >New quote</button>);
+  document.getElementById("quote-text-text").innerHTML = quotes[rand];
+  document.getElementById("quote-author-text").innerHTML = quotes[rand + 1];                                                                 } } >New quote</button>);
 }
 
 function Tweet() {
