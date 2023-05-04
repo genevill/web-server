@@ -48,4 +48,6 @@ export const MarkdownApp = () => {
   );
 }
 
-document.addEventListener("DOMContentLoaded", LoadText);
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("markdown-editor").innerHTML = defaultText;
+});
