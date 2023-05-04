@@ -47,3 +47,5 @@ export const MarkdownApp = () => {
     </div>
   );
 }
+
+document.addEventListener("DOMContentLoaded", LoadText);
