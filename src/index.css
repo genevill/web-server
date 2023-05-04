@@ -27,10 +27,6 @@ body {
         font-size: 0.8rem;
     }
 
-    h1 {
-        font-size: 1.2rem;
-    }
-
     #about-me img {
         width: 100px;
     }
@@ -39,10 +35,6 @@ body {
 @media only screen and (min-width: 720px) {
     a {
         font-size: 1rem;
-    }
-
-    h1 {
-        font-size: 1.5rem;
     }
 
     #about-me img {
