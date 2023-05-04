@@ -8,7 +8,7 @@
 }
 
 #markdown-box1 {
-    width: 507px;
+    width: auto;
     margin: auto;
     overflow: auto;
     background-color: var(--medium-color);
@@ -23,7 +23,7 @@ h1#markdown-box1 {
 }
 
 #markdown-box2 {
-    width: 700px;
+    width: auto;
     margin: auto;
     overflow: auto;
     background-color: var(--medium-color);
