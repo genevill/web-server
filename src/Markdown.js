@@ -47,7 +47,3 @@ export const MarkdownApp = () => {
     </div>
   );
 }
-
-document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("markdown-preview").innerHTML = marked.parse(document.getElementById("markdown-editor").value);
-});
