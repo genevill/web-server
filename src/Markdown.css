@@ -11,6 +11,7 @@
     width: auto;
     margin: auto;
     overflow: auto;
+    display: inline-block;
     background-color: var(--medium-color);
     padding: 10px;
     border-radius: 10px;
