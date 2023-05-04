@@ -4,7 +4,6 @@ import { TimerApp } from './Timer.js';
 import { DrumApp } from './DrumMachine.js';
 import { QuoteApp } from './Quote.js';
 import { MarkdownApp } from './Markdown.js';
-import { marked } from 'marked';
 
 //----App----------------------------------------------------------------------
 
@@ -61,9 +60,5 @@ function App() {
   </div>
  );
 }
-
-document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("markdown-preview").innerHTML = marked.parse(document.getElementById("markdown-editor").value);
-});
 
 export default App;
