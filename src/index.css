@@ -22,7 +22,7 @@ body {
     place-items: center;
 }
 
-@media only screen and (max-width: 720px) {
+/*@media only screen and (max-width: 720px) {
     a {
         font-size: 0.8rem;
     }
@@ -48,7 +48,7 @@ body {
     #about-me img {
         width: 200px;
     }
-}
+}*/
 
 a {
     text-decoration: none;
