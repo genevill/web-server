@@ -46,7 +46,6 @@ h1#markdown-box1 {
     width: auto;
     margin: auto;
     display: inline-block;
-    place-items: center;
     background-color: transparent;
 }
 .markdown-row {
