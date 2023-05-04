@@ -61,4 +61,8 @@ function App() {
  );
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("markdown-editor").innerHTML += " ";
+});
+
 export default App;
