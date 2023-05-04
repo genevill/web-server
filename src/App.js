@@ -4,6 +4,7 @@ import { TimerApp } from './Timer.js';
 import { DrumApp } from './DrumMachine.js';
 import { QuoteApp } from './Quote.js';
 import { MarkdownApp } from './Markdown.js';
+import { marked } from 'marked';
 
 //----App----------------------------------------------------------------------
 
