@@ -16,7 +16,7 @@ const defaultText =
       "}\n" +
       "```\n" +
       "- And of course there are lists.\n\n" +
-      "![freeCodeCamp Logo](https://cdn.freecodecamp.org/testable-projects-fcc/images/fcc_secondary.svg)\n" +
+      "![freeCodeCamp Logo](https://cdn.freecodecamp.org/testable-projects-fcc/images/fcc_secondary.svg)\n\n" +
       "**Hello**";
 
 const defaultParsed = marked.parse(defaultText);
@@ -48,4 +48,6 @@ export const MarkdownApp = () => {
   );
 }
 
-document.addEventListener("DOMContentLoaded", LoadText);
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("markdown-editor").innerHTML += " ";
+});
