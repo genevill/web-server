@@ -1,12 +1,22 @@
+:root {
+    --dark-color: #212529;
+    --dark2-color: #213242;
+    --medium-color: #5E6A75;
+    --light-color: #3B5875;
+    --light2-color: #9BAEC2;
+    --text-color: #f8f9ff;
+}
+
 .quote-box {
   width: 300px;
-  h1 {
-    font-size: 20px;
-  };
-  background-color: seashell;
+  background-color: var(--medium-color);
   padding: 10px;
   border-radius: 10px;
-  box-shadow: 5px 7px 20px rosybrown;
+  box-shadow: 5px 7px 20px black;
+}
+
+h1.quote-box {
+    font-size: 20px;
 }
 #quote-author {
   align: right;
@@ -32,16 +42,16 @@
 }
 
 .quote-button {
-  background-color: rosybrown;
-  border: none;
-  color: white;
-  padding: 7px 7px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px;
-  cursor: pointer;
-  border-radius: 15px;
-  box-shadow: 1px 2px 5px rosybrown;
+    background-color: var(--dark2-color);
+    border: none;
+    color: white;
+    padding: 7px 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 1px 2px 5px black;
 }
