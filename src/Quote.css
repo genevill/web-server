@@ -12,6 +12,7 @@
   background-color: var(--medium-color);
   padding: 10px;
   border-radius: 10px;
+  margin: auto;
   box-shadow: 5px 7px 20px black;
 }
 
