@@ -29,7 +29,7 @@ const PreviewBox = props => {
   return <p id="markdown-preview" onLoad={LoadText}></p>
 }
 
-function LoadText() {
+export function LoadText() {
   document.getElementById("markdown-preview").innerHTML = marked.parse(document.getElementById("markdown-editor").value);
 }
 
@@ -47,7 +47,3 @@ export const MarkdownApp = () => {
     </div>
   );
 }
-
-document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("markdown-editor").innerHTML = defaultText;
-});

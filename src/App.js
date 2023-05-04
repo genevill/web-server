@@ -4,6 +4,7 @@ import { TimerApp } from './Timer.js';
 import { DrumApp } from './DrumMachine.js';
 import { QuoteApp } from './Quote.js';
 import { MarkdownApp } from './Markdown.js';
+import { LoadText } from './Markdown.js';
 
 //----App----------------------------------------------------------------------
 
@@ -60,5 +61,11 @@ function App() {
   </div>
  );
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    if (document.getElementById("markdown-preview") != null && document.getElementById("markdown-editor") != null) {
+        LoadText();
+    }
+});
 
 export default App;
