@@ -43,7 +43,7 @@ h1#markdown-box1 {
 }
 
 #markdown-parent {
-    width: 640px;
+    width: auto;
     margin: auto;
     display: inline-block;
     place-items: center;
