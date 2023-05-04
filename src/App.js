@@ -64,13 +64,13 @@ function App() {
 
 document.addEventListener("DOMContentLoaded", function () {
     if (document.getElementById("markdown-preview") != null && document.getElementById("markdown-editor") != null) {
-        if (document.getElementById("markdown-preview") == null) {
-            console.log("markdown-preview is null");
-        }
-        if (document.getElementById("markdown-editor") == null) {
-            console.log("markdown-editor is null");
-        }
         LoadText();
+    }
+    if (document.getElementById("markdown-preview") == null) {
+        console.log("markdown-preview is null");
+    }
+    if (document.getElementById("markdown-editor") == null) {
+        console.log("markdown-editor is null");
     }
 });
 

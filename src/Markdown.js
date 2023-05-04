@@ -38,8 +38,8 @@ export function LoadText() {
 export const MarkdownApp = () => {
   return(
     <div id="markdown-parent">
-          <div class="markdown-box" id="markdown-box1">
-              <TextBox text={defaultText} />
+      <div class="markdown-box" id="markdown-box1">
+        <TextBox text={defaultText} />
       </div>
       <div class="markdown-box" id="markdown-box2">
         <PreviewBox />
