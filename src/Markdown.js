@@ -22,7 +22,7 @@ const defaultText =
 const defaultParsed = marked.parse(defaultText);
 
 const TextBox = props => {
-  return <textarea id="markdown-editor" name="markdown-editor" rows="4" onInput={LoadText}></textarea>
+    return <textarea id="markdown-editor" name="markdown-editor" rows="4" onInput={LoadText}>{defaultText}</textarea>
 }
 
 const PreviewBox = props => {
