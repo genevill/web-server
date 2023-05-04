@@ -25,6 +25,10 @@ h1.quote-box {
   text-align: right;
 }
 
+img#markdown-preview {
+    width: 100%;
+}
+
 .quote-row {
   display: grid;
   grid-template-columns: auto auto;
