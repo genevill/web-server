@@ -62,7 +62,9 @@ function App() {
  );
 }
 
-document.addEventListener("DOMContentLoaded", function () {
+export default App;
+
+window.addEventListener("load", function () {
     if (document.getElementById("markdown-preview") != null && document.getElementById("markdown-editor") != null) {
         LoadText();
     }
@@ -73,5 +75,3 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("markdown-editor is null");
     }
 });
-
-export default App;
