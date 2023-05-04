@@ -26,7 +26,7 @@ h1#markdown-box1 {
     width: 700px;
     margin: auto;
     overflow: auto;
-    background-color: transparent;
+    background-color: var(--medium-color);
     padding: 10px;
     border-radius: 10px;
     box-shadow: 5px 7px 20px black;
@@ -45,8 +45,9 @@ h1#markdown-box1 {
 #markdown-parent {
     width: 640px;
     margin: auto;
+    display: inline-block;
     place-items: center;
-    background-color: var(--medium-color);
+    background-color: transparent;
 }
 .markdown-row {
   display: grid;
