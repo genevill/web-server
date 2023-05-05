@@ -25,7 +25,7 @@ body {
 
 @media only screen and (max-width: 720px) {
     body {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     #about-me img {
@@ -35,7 +35,7 @@ body {
 
 @media only screen and (min-width: 720px) {
     body {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     
     #about-me img {
