@@ -14,7 +14,27 @@
 
 html {
     scroll-behavior: smooth;
-    font-size: 62.5%;
+    font-size: 16px;
+}
+
+@media screen and (min-width: 320px) {
+    html {
+        font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+    }
+    #about-me img {
+        width: 50vw;
+        max-width: 125px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    html {
+        font-size: 22px;
+    }
+    #about-me img {
+        width: 50vw;
+        max-width: 250px;
+    }
 }
 
 body {
@@ -22,6 +42,7 @@ body {
     display: grid;
     place-items: center;
     font-size: 1.375rem;
+    height: 100vh;
 }
 
 h1 {
@@ -46,22 +67,6 @@ h5 {
 
 h6 {
     font-size: 0.67rem;
-}
-
-@media only screen and (max-width: 720px) {
-
-    #about-me img {
-        width: 50vw;
-        max-width: 125px;
-    }
-}
-
-@media only screen and (min-width: 720px) {
-
-    #about-me img {
-        width: 50vw;
-        max-width: 250px;
-    }
 }
 
 a {
