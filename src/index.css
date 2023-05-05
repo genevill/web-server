@@ -58,7 +58,8 @@ h6 {
 @media only screen and (min-width: 720px) {
 
     #about-me img {
-        width: 250px;
+        width: 33vw;
+        max-width: 250px;
     }
 }
 
