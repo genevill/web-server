@@ -21,12 +21,34 @@ body {
     background-color: var(--dark-color);
     display: grid;
     place-items: center;
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.17rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+h5 {
+    font-size: 0.83rem;
+}
+
+h6 {
+    font-size: 0.67rem;
 }
 
 @media only screen and (max-width: 720px) {
-    body {
-        font-size: 0.75rem;
-    }
 
     #about-me img {
         width: 100px;
@@ -34,15 +56,7 @@ body {
 }
 
 @media only screen and (min-width: 720px) {
-    body {
-        font-size: 1rem;
-    }
-    h1 { font-size: 2rem; }
-    h2 { font-size: 1.5rem; }
-    h3 { font-size: 1.17rem; }
-    h4 { font-size: 1rem; }
-    h5 { font-size: 0.83rem; }
-    h6 { font-size: 0.67rem; }
+
     #about-me img {
         width: 250px;
     }
