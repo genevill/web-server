@@ -24,7 +24,7 @@ body {
 }
 
 #about-me img {
-    width: 10vw;
+    width: 30vw;
 }
 
 @media only screen and (max-width: 720px) {
