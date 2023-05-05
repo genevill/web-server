@@ -23,16 +23,16 @@ body {
     place-items: center;
 }
 
+#about-me img {
+    width: 10vw;
+}
+
 @media only screen and (max-width: 720px) {
-    #about-me img {
-        width: 100px;
-    }
+    
 }
 
 @media only screen and (min-width: 720px) {
-    #about-me img {
-        width: 200px;
-    }
+
 }
 
 a {
