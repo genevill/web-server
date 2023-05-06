@@ -137,7 +137,18 @@ nav a {
     margin: 0.5rem;
 }
 
-nav.navbar a:before, nav.navbar a:after {
+div.navborders a {
+    color: #FFF;
+    text-decoration: none;
+    font: 20px Raleway;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+div.navborders a:before, div.navborders a:after {
     position: absolute;
     left: 0px;
     width: 100%;
@@ -148,17 +159,17 @@ nav.navbar a:before, nav.navbar a:after {
     transition: all 0.3s;
 }
 
-nav.navbar a:before {
+div.navborders a:before {
     top: 0px;
     transform: translateY(10px);
 }
 
-nav.navbar a:after {
+div.navborders a:after {
     bottom: 0px;
     transform: translateY(-10px);
 }
 
-nav.navbar a:hover:before, nav.navbar a:hover:after {
+div.navborders a:hover:before, div.navborders a:hover:after {
     opacity: 1;
     transform: translateY(0px);
 }

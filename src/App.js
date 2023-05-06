@@ -13,10 +13,12 @@ function App() {
   <div>
     <div class="header">
       <header id="header">
-      <nav class="navbar" id="navbar">
-        <a class="nav-links" href="#about-me">About Me</a>
-        <a class="nav-links" href="#projects">Projects</a>
-        <a class="nav-links" href="#coding-challenges">Coding Challenges</a>
+        <nav class="navbar" id="navbar">
+          <div class="navborders">
+            <a class="nav-links" href="#about-me">About Me</a>
+            <a class="nav-links" href="#projects">Projects</a>
+            <a class="nav-links" href="#coding-challenges">Coding Challenges</a>
+          </div>
       </nav>
       </header>
     </div>
