@@ -5,7 +5,6 @@
     --light-color: #3B5875;
     --light2-color: #9BAEC2;
     --text-color: #f8f9ff;
-    font-size: 0.75%;
 }
 
 * {
@@ -22,16 +21,16 @@ body {
     background-color: var(--dark-color);
     display: grid;
     place-items: center;
-    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    font-size: clamp(0.675rem, 2.5vw, 1rem);
     height: 100vh;
 }
 
 h1 {
-    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    font-size: clamp(1.5rem, 2.5vw, 2.25rem);
 }
 
 h2 {
-    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    font-size: clamp(1.25rem, 2.5vw, 1.875rem);
 }
 
 h3 {
@@ -39,15 +38,15 @@ h3 {
 }
 
 h4 {
-    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    font-size: clamp(0.875rem, 2.5vw, 1.25rem);
 }
 
 h5 {
-    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    font-size: clamp(0.75rem, 2.5vw, 1.125rem);
 }
 
 h6 {
-    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    font-size: clamp(0.675rem, 2.5vw, 1rem);
 }
 
 #about-me img {
