@@ -28,7 +28,7 @@ body {
     display: grid;
     place-items: center;
     font-size: clamp(0.675rem, 1.5vw, 1rem);
-    width: 100%;
+    width: fit-content;
 }
 
 h1 {
