@@ -124,9 +124,9 @@ a:hover {
     user-select: none;
 }
 
-navbar {
-    position: relative;
-    overflow: hidden;
+.navbar {
+    /*   position: relative;
+    overflow: hidden;*/
     width: 100%;
     top: 0.5rem;
     text-align: right;
