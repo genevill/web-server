@@ -154,13 +154,13 @@ div.navborders a:before, div.navborders a:after {
 }
 
 div.navborders a:before {
-    top: 2px;
-    transform: translateY(30px);
+    top: 0px;
+    transform: translateY(10px);
 }
 
 div.navborders a:after {
     bottom: 0px;
-    transform: translateY(-30px);
+    transform: translateY(-10px);
 }
 
 div.navborders a:hover:before, div.navborders a:hover:after {
