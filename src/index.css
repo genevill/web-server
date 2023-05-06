@@ -68,25 +68,10 @@ a:hover {
     color: var(--light2-color);
 }
 
-.navbar {
-    position: fixed;
-    overflow: hidden;
-    width: 100%;
-    top: 0.5rem;
-    text-align: right;
-    right: 1rem;
-}
-
-nav a {
-    margin: 0.5rem;
-}
-
 #welcome-section {
     height: auto;
     padding: 1rem;
 }
-
-
 
 .about-me-sub {
     display: grid;
@@ -139,10 +124,17 @@ nav a {
     user-select: none;
 }
 
-nav.navbar {
-    margin: 0 auto;
-    padding: 10em 3em;
-    text-align: center;
+.navbar {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    top: 0.5rem;
+    text-align: right;
+    right: 1rem;
+}
+
+nav a {
+    margin: 0.5rem;
 }
 
 nav.navbar a:before, nav.navbar a:after {
@@ -151,7 +143,6 @@ nav.navbar a:before, nav.navbar a:after {
     width: 100%;
     height: 2px;
     background: #FFF;
-    content: "";
     opacity: 0;
     transition: all 0.3s;
 }
