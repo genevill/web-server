@@ -51,7 +51,7 @@ h6 {
 }
 
 #about-me img {
-    font-size: clamp(125px, 100%, 250px);
+    width: clamp(125px, 100%, 250px);
     border-radius: 50%;
 }
 
