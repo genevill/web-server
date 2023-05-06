@@ -125,8 +125,6 @@ a:hover {
 }
 
 .navbar {
-    /*   position: relative;
-    overflow: hidden;*/
     width: 100%;
     top: 0.5rem;
     text-align: right;

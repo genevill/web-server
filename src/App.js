@@ -25,7 +25,6 @@ function App() {
     <div class="main">
       <main id="main">
         <section class="center" id="about-me">
-          <h3>About Me</h3>
           <div class="about-me-sub">
             <div class="about-me-div unselectable">
               <img class="unselectable"  src="https://github.com/genevill/genevill/blob/main/profilepic.JPG?raw=true" />
@@ -38,7 +37,6 @@ function App() {
           </div>
         </section>
         <section class="center" id="projects">
-            <h3 >Projects</h3>
             <h4>Pomodoro Timer App</h4>
             <TimerApp />
             <h4>Calculator App</h4>
@@ -52,7 +50,6 @@ function App() {
 
         </section>
         <section class="center" id="coding-challenges">
-          <h3>Coding Challenges</h3>
         </section>
       </main>
     </div>
