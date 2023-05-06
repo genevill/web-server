@@ -138,6 +138,7 @@ div.navborders a {
     text-decoration: none;
     margin: 0px 10px;
     padding: 10px 10px;
+    position: relative;
     z-index: 0;
     cursor: pointer;
 }
