@@ -133,14 +133,12 @@ a:hover {
     right: 1rem;
 }*/
 
-nav a {
-    margin: 0.5rem;
-}
-
 div.navborders a {
+    top: 0.5rem;
+    text-align: right;
+    right: 1rem;
     color: #FFF;
     text-decoration: none;
-    font: 20px Raleway;
     margin: 0px 10px;
     padding: 10px 10px;
     position: relative;
