@@ -124,7 +124,7 @@ a:hover {
     user-select: none;
 }
 
-.navbar {
+navbar {
     position: relative;
     overflow: hidden;
     width: 100%;
