@@ -5,6 +5,7 @@
     --light-color: #3B5875;
     --light2-color: #9BAEC2;
     --text-color: #f8f9ff;
+    font-size: 0.75%;
 }
 
 * {
@@ -26,27 +27,27 @@ body {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
 }
 
 h3 {
-    font-size: 1.17rem;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
 }
 
 h4 {
-    font-size: 1rem;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
 }
 
 h5 {
-    font-size: 0.83rem;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
 }
 
 h6 {
-    font-size: 0.67rem;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
 }
 
 #about-me img {
