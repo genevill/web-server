@@ -21,7 +21,7 @@ body {
     background-color: var(--dark-color);
     display: grid;
     place-items: center;
-    font-size: 1.375rem;
+    font-size: clamp(1rem, 2.5vw, 2rem);
     height: 100vh;
 }
 
