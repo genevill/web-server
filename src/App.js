@@ -37,8 +37,6 @@ function App() {
         </section>
         <section class="center" id="projects">
             <h3 >Projects</h3>
-            <p class="project-tile">Project Tile</p>
-            <a href="./project-link">Project Link</a>
             <h4>Pomodoro Timer App</h4>
             <TimerApp />
             <h4>Calculator App</h4>
