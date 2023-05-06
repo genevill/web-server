@@ -51,6 +51,8 @@ h6 {
 }
 
 #about-me img {
+    width: 100%;
+    max-width: 125px;
     border-radius: 50%;
 }
 
