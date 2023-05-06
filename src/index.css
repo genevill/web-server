@@ -51,8 +51,7 @@ h6 {
 }
 
 #about-me img {
-    width: 100%;
-    max-width: 125px;
+    width: clamp(125px, 100%, 250px);
     border-radius: 50%;
 }
 
@@ -90,7 +89,7 @@ nav a {
 
 
 .about-me-sub {
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: center;
 }
@@ -99,7 +98,12 @@ nav a {
     margin: 1rem;
 }
 
+.about-me-div:nth-of-type(1) {
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+
 .about-me-div:nth-of-type(2) {
+    grid-area: 1 / 2 / span 1 / span 1;
     display: grid;
 }
 
