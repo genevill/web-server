@@ -23,7 +23,7 @@ function App() {
     <div class="main">
       <main id="main">
         <section class="center" id="about-me">
-          <h1>About Me</h1>
+          <h2>About Me</h2>
           <div class="about-me-sub">
             <div class="about-me-div unselectable">
               <img class="unselectable"  src="https://github.com/genevill/genevill/blob/main/profilepic.JPG?raw=true" />
@@ -36,23 +36,23 @@ function App() {
           </div>
         </section>
         <section class="center" id="projects">
-            <h1 >Projects</h1>
+            <h2 >Projects</h2>
             <p class="project-tile">Project Tile</p>
             <a href="./project-link">Project Link</a>
-            <h1>Pomodoro Timer App</h1>
+            <h3>Pomodoro Timer App</h3>
             <TimerApp />
-            <h1>Calculator App</h1>
+            <h3>Calculator App</h3>
             <CalculatorApp />
-            <h1>Drum App</h1>
+            <h3>Drum App</h3>
             <DrumApp />
-            <h1>Markdown App</h1>
+            <h3>Markdown App</h3>
             <MarkdownApp />
-            <h1>Quote App</h1>
+            <h3>Quote App</h3>
             <QuoteApp />
 
         </section>
         <section class="center" id="coding-challenges">
-          <h1>Coding Challenges</h1>
+          <h2>Coding Challenges</h2>
         </section>
       </main>
     </div>
