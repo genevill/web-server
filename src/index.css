@@ -50,7 +50,7 @@ h6 {
 }
 
 #about-me img {
-    width: clamp(125px, 10vw, 250px);
+    width: clamp(125px, 20vw, 250px);
     max-width: 125px;
 }
 
