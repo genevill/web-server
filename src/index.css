@@ -161,12 +161,12 @@ div.navborders a:before, div.navborders a:after {
 
 div.navborders a:before {
     top: 0px;
-    transform: translateY(10px);
+    transform: translateY(9px);
 }
 
 div.navborders a:after {
     bottom: 0px;
-    transform: translateY(-10px);
+    transform: translateY(-9px);
 }
 
 div.navborders a:hover:before, div.navborders a:hover:after {
