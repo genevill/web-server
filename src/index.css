@@ -21,15 +21,14 @@
 html {
     scroll-behavior: smooth;
     font-size: 62.5%;
-    width: fit-content;
+    display: inline-block
 }
 
 body {
     background-color: var(--dark-color);
-    display: grid;
+    display: inline-block;
     place-items: center;
     font-size: clamp(0.675rem, 1.5vw, 1rem);
-    width: fit-content;
 }
 
 h1 {
