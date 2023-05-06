@@ -155,7 +155,7 @@ div.navborders a:before, div.navborders a:after {
 }
 
 div.navborders a:before {
-    top: 1px;
+    top: 5px;
     transform: translateY(10px);
 }
 
