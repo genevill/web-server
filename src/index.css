@@ -8,6 +8,10 @@
     font-size: 112.5%;
 }
 
+.app {
+    width: 100vw;
+}
+
 * {
     color: var(--text-color);
     font-family: 'Open Sans', sans-serif;

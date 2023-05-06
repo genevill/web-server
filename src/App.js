@@ -10,7 +10,7 @@ import { LoadText } from './Markdown.js';
 
 function App() {
   return (
-  <div>
+  <div class="app">
     <div class="header">
       <header id="header">
         <nav class="navbar" id="navbar">
