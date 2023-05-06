@@ -9,7 +9,6 @@
 }
 
 .app {
-    width: 100vw;
     overflow: hidden;
 }
 
@@ -21,12 +20,10 @@
 html {
     scroll-behavior: smooth;
     font-size: 62.5%;
-    display: inline-block
 }
 
 body {
     background-color: var(--dark-color);
-    display: inline-block;
     place-items: center;
     font-size: clamp(0.675rem, 1.5vw, 1rem);
 }
