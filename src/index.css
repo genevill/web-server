@@ -50,8 +50,14 @@ h6 {
 }
 
 #about-me img {
-    width: clamp(125px, 20vw, 250px);
+    width: clamp(125px, 30vw, 250px);
     max-width: 125px;
+    border-radius: 50%;
+}
+
+#about-me {
+    height: auto;
+    padding: 1rem;
 }
 
 @media only screen and (max-width: 720px) {
@@ -88,10 +94,7 @@ nav a {
     padding: 1rem;
 }
 
-#about-me {
-    height: auto;
-    padding: 1rem;
-}
+
 
 .about-me-sub {
     display: flex;
@@ -111,10 +114,6 @@ nav a {
     margin: 1rem;
 }
 
-#about-me img {
-    border-radius: 50%;
-}
-
 #projects {
     height: auto;
     display: inline-block;
@@ -128,9 +127,6 @@ nav a {
 .center {
     text-align: center;
 }
-
-
-
 
 .grid-container {
     display: grid;
