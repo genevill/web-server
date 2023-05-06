@@ -154,12 +154,12 @@ div.navborders a:before, div.navborders a:after {
 }
 
 div.navborders a:before {
-    top: -2px;
+    top: 0px;
     transform: translateY(10px);
 }
 
 div.navborders a:after {
-    bottom: -2px;
+    bottom: 0px;
     transform: translateY(-10px);
 }
 
