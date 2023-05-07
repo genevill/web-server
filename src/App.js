@@ -26,9 +26,6 @@ function App() {
       <main id="main">
         <section class="center" id="about-me">
           <div class="about-me-sub">
-            <div class="about-me-div unselectable">
-              <img class="unselectable"  src="https://github.com/genevill/genevill/blob/main/profilepic.JPG?raw=true" />
-            </div>
             <div class="about-me-div">
               <a id="profile-link" href="https://www.freecodecamp.org/genevill" target="_blank">freeCodeCamp Portfolio</a>
               <a id="profile-link" href="https://play.google.com/store/apps/dev?id=6083836623150592844" target="_blank">Google Developer Profile</a>
