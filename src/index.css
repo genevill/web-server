@@ -60,14 +60,11 @@ h6 {
 .about-me-sub {
 }
 
-#main {
-    background: url('https://raw.githubusercontent.com/genevill/web-server/master/src/LostGalaxies%20Header%20Name.jpg') no-repeat center center fixed;
-    background-size: 100% auto;
-}
-
 #about-me {
     height: auto;
     padding: 1rem;
+    background: url('https://raw.githubusercontent.com/genevill/web-server/master/src/LostGalaxies%20Header%20Name.jpg') no-repeat center center fixed;
+    background-size: 100% auto;
 }
 
 a {
