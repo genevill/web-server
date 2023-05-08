@@ -57,6 +57,11 @@ h6 {
     border-radius: 50%;
 }
 
+.about-me-sub {
+    background: url('https://raw.githubusercontent.com/genevill/web-server/master/src/LostGalaxies%20Header%20Name.jpg') no-repeat center center fixed;
+    background-size: 100% auto;
+}
+
 #about-me {
     height: auto;
     padding: 1rem;
@@ -83,12 +88,13 @@ a:hover {
 
 .about-me-div {
     margin: 1rem;
-    grid-area: 1 / 1 / span 1 / span 1;
-    background: url('https://raw.githubusercontent.com/genevill/web-server/master/src/LostGalaxies%20Header%20Name.jpg') no-repeat center center fixed;
-    background-size: 100% auto;
 }
 
-.about-me-links {
+.about-me-div:nth-of-type(1) {
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+
+.about-me-div:nth-of-type(2) {
     grid-area: 2 / 1 / span 1 / span 1;
     display: grid;
 }
