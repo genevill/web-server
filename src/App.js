@@ -28,7 +28,7 @@ function App() {
           <div class="about-me-sub">
             <div class="about-me-div unselectable">
               <h1>LostGalaxies</h1>
-              <h3>Web/App/Game Developer</h3>
+              <h3>Web / App / Game Developer</h3>
             </div>
             <div class="about-me-div">
               <a id="profile-link" href="https://www.freecodecamp.org/genevill" target="_blank">freeCodeCamp Portfolio</a>
