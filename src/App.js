@@ -29,11 +29,11 @@ function App() {
             <div class="about-me-div unselectable">
               <h1>LostGalaxies</h1>
               <h3>Web / App / Game Developer</h3>
-            </div>
-            <div class="about-me-div">
-              <a id="profile-link" href="https://www.freecodecamp.org/genevill" target="_blank">freeCodeCamp Portfolio</a>
-              <a id="profile-link" href="https://play.google.com/store/apps/dev?id=6083836623150592844" target="_blank">Google Developer Profile</a>
-              <a id="profile-link" href="https://github.com/genevill" target="_blank">GitHub Portfolio</a>
+              <div class="about-me-links">
+                <a id="profile-link" href="https://www.freecodecamp.org/genevill" target="_blank">freeCodeCamp Portfolio</a>
+                <a id="profile-link" href="https://play.google.com/store/apps/dev?id=6083836623150592844" target="_blank">Google Developer Profile</a>
+                <a id="profile-link" href="https://github.com/genevill" target="_blank">GitHub Portfolio</a>
+              </div>
             </div>
           </div>
         </section>
