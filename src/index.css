@@ -89,7 +89,7 @@ a:hover {
 
 .about-me-div:nth-of-type(1) {
     grid-area: 1 / 1 / span 1 / span 1;
-    height: 50rem;
+    height: 30rem;
 }
 
 .about-me-div:nth-of-type(2) {
