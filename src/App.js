@@ -20,10 +20,10 @@ const AppButton = props => {
             case "Drum App":
                 console.log("Drum App");
                 break;
-            case "Drum App":
+            case "Markdown App":
                 console.log("Markdown App");
                 break;
-            case "Drum App":
+            case "Quote App":
                 console.log("Quote App");
                 break;
             default:
