@@ -8,6 +8,10 @@ import { LoadText } from './Markdown.js';
 
 //----App----------------------------------------------------------------------
 
+const AppButton = props => {
+    return (<button>{props.text}</button>)
+}
+
 function App() {
   return (
   <div class="app">
@@ -27,11 +31,19 @@ function App() {
         <section id="background">
         </section>
         <section class="center" id="about-me">
-          <div id="about-me">
-            <a id="profile-link" href="https://www.freecodecamp.org/genevill" target="_blank">freeCodeCamp Portfolio</a>
-            <a id="profile-link" href="https://play.google.com/store/apps/dev?id=6083836623150592844" target="_blank">Google Developer Profile</a>
-            <a id="profile-link" href="https://github.com/genevill" target="_blank">GitHub Portfolio</a>
-          </div>
+            <div id="about-me">
+                <a id="profile-link" href="https://www.freecodecamp.org/genevill" target="_blank">freeCodeCamp Portfolio</a>
+                <a id="profile-link" href="https://play.google.com/store/apps/dev?id=6083836623150592844" target="_blank">Google Developer Profile</a>
+                <a id="profile-link" href="https://github.com/genevill" target="_blank">GitHub Portfolio</a>
+            </div>
+            <div>
+                <AppButton text="Pomodoro Timer"></AppButton>
+                <AppButton text="Calculator"></AppButton>
+                <AppButton text="Drum App"></AppButton>
+                <AppButton text="Markdown App"></AppButton>
+                <AppButton text="Quote App"></AppButton>
+            </div>
+
         </section>
         <section class="center" id="projects">
             <h4>Pomodoro Timer App</h4>
