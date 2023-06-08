@@ -24,6 +24,8 @@ function App() {
     </div>
     <div class="main">
       <main id="main">
+        <section id="background">
+        </section>
         <section class="center" id="about-me">
           <div class="about-me-sub">
             <div class="about-me-div unselectable">
