@@ -85,6 +85,7 @@ a:hover {
 
 .about-me-div {
     margin: 1rem;
+    height: auto;
 }
 
 .about-me-div:nth-of-type(1) {
