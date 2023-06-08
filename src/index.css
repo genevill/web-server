@@ -52,11 +52,6 @@ h6 {
     font-size: clamp(0.675rem, 1.5vw, 1rem);
 }
 
-#about-me img {
-    width: clamp(125px, 15vw, 250px);
-    border-radius: 50%;
-}
-
 #background {
     height: auto;
     padding: 1rem;
@@ -75,6 +70,11 @@ a:hover {
 #welcome-section {
     height: auto;
     padding: 1rem;
+}
+
+#about-me img {
+    width: clamp(125px, 15vw, 250px);
+    border-radius: 50%;
 }
 
 .about-me-sub {
@@ -111,6 +111,10 @@ a:hover {
 
 .about-me-div:nth-of-type(2) a {
     margin: 1rem;
+}
+
+#profile-link {
+    margin: 0 1rem 0 0;
 }
 
 #projects {
