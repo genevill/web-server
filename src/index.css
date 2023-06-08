@@ -58,14 +58,14 @@ h6 {
 }
 
 #about-me {
-    height: auto;
+    height: 10%;
 }
 
 #background {
-    height: 100%;
+    height: auto;
     padding: 1rem;
     background: url('https://raw.githubusercontent.com/genevill/web-server/master/src/LostGalaxies%20Header%20Name.jpg') no-repeat center top fixed;
-    background-size: 100% 100%;
+    background-size: 100% auto;
 }
 
 a {
