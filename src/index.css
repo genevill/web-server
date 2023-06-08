@@ -57,6 +57,10 @@ h6 {
     border-radius: 50%;
 }
 
+#about-me {
+    height: auto;
+}
+
 #background {
     height: auto;
     padding: 1rem;
