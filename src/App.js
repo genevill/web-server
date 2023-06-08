@@ -9,7 +9,27 @@ import { LoadText } from './Markdown.js';
 //----App----------------------------------------------------------------------
 
 const AppButton = props => {
-    return (<button>{props.text}</button>)
+    return (<button onMouseDown={() => {
+        switch (props.text) {
+            case "Pomodoro Timer":
+                console.log("Pomodoro Timer");
+                break;
+            case "Calculator":
+                console.log("Calculator");
+                break;
+            case "Drum App":
+                console.log("Drum App");
+                break;
+            case "Drum App":
+                console.log("Markdown App");
+                break;
+            case "Drum App":
+                console.log("Quote App");
+                break;
+            default:
+            // code block
+        }
+    }} >{props.text}</button>)
 }
 
 function App() {
