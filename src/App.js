@@ -6,7 +6,7 @@ import { QuoteApp } from './Quote.js';
 import { MarkdownApp } from './Markdown.js';
 import { LoadText } from './Markdown.js';
 
-var openedApp = null;
+var openedApp = <p></p>;
 
 //----App----------------------------------------------------------------------
 
@@ -79,7 +79,7 @@ function App() {
 
         </section>
         <section class="center" id="projects">
-            {openedApp}
+            
         </section>
         <section class="center" id="coding-challenges">
         </section>
