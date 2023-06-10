@@ -70,7 +70,7 @@ function App() {
 
         </section>
         <section class="center" id="projects">
-            
+            <Switcher />
         </section>
         <section class="center" id="coding-challenges">
         </section>
