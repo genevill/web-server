@@ -6,13 +6,15 @@ import { QuoteApp } from './Quote.js';
 import { MarkdownApp } from './Markdown.js';
 import { LoadText } from './Markdown.js';
 
+var openedApp = null;
+
 //----App----------------------------------------------------------------------
 
 const AppButton = props => {
     return (<button onMouseDown={() => {
         switch (props.text) {
             case "Pomodoro Timer":
-                console.log("Pomodoro Timer");
+                openedApp = < TimerApp />;
                 break;
             case "Calculator":
                 console.log("Calculator");
@@ -31,6 +33,17 @@ const AppButton = props => {
         }
     }} >{props.text}</button>)
 }
+
+//<h4>Pomodoro Timer App</h4>
+//            <TimerApp />
+//            <h4>Calculator App</h4>
+//            <CalculatorApp />
+//            <h4>Drum App</h4>
+//            <DrumApp />
+//            <h4>Markdown App</h4>
+//            <MarkdownApp />
+//            <h4>Quote App</h4>
+//            <QuoteApp />
 
 function App() {
   return (
@@ -66,17 +79,7 @@ function App() {
 
         </section>
         <section class="center" id="projects">
-            <h4>Pomodoro Timer App</h4>
-            <TimerApp />
-            <h4>Calculator App</h4>
-            <CalculatorApp />
-            <h4>Drum App</h4>
-            <DrumApp />
-            <h4>Markdown App</h4>
-            <MarkdownApp />
-            <h4>Quote App</h4>
-            <QuoteApp />
-
+            {openedApp}
         </section>
         <section class="center" id="coding-challenges">
         </section>
