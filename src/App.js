@@ -6,32 +6,23 @@ import { QuoteApp } from './Quote.js';
 import { MarkdownApp } from './Markdown.js';
 import { LoadText } from './Markdown.js';
 
-var openedApp = <p></p>;
+var openedApp = null;
 
 //----App----------------------------------------------------------------------
 
 const AppButton = props => {
     return (<button onMouseDown={() => {
-        switch (props.text) {
-            case "Pomodoro Timer":
-                openedApp = < TimerApp />;
-                break;
-            case "Calculator":
-                console.log("Calculator");
-                break;
-            case "Drum App":
-                console.log("Drum App");
-                break;
-            case "Markdown App":
-                console.log("Markdown App");
-                break;
-            case "Quote App":
-                console.log("Quote App");
-                break;
-            default:
-            // code block
-        }
+        openedApp = props.text;
     }} >{props.text}</button>)
+}
+
+const Switcher = props => {
+    if (openedApp == null) {
+        return (<p></p>);
+    }
+    if (openedApp != null) {
+        return (<p>success!</p>);
+    }
 }
 
 //<h4>Pomodoro Timer App</h4>
