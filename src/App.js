@@ -18,7 +18,7 @@ const AppButton = props => {
 
 const Switcher = props => {
     if (openedApp == null) {
-        return (<p></p>);
+        return (<p>still null</p>);
     }
     if (openedApp != null) {
         return (<p>success!</p>);
