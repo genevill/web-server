@@ -71,6 +71,7 @@ function App() {
         </section>
         <section class="center" id="projects">
             <Switcher />
+            <DrumApp />
         </section>
         <section class="center" id="coding-challenges">
         </section>
