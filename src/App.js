@@ -86,7 +86,7 @@ function App() {
             </div>
 
         </section>
-        <section class="center" id="projects">
+        <section class="center switcher-center" id="projects">
             <Switcher class="switcher-center" />
         </section>
         <section class="center" id="coding-challenges">
