@@ -5,23 +5,49 @@ import { DrumApp } from './DrumMachine.js';
 import { QuoteApp } from './Quote.js';
 import { MarkdownApp } from './Markdown.js';
 import { LoadText } from './Markdown.js';
+import { useState } from 'react';
 
-var openedApp = null;
+
+const [openedApp, setOpenedApp] = useState(0);
 
 //----App----------------------------------------------------------------------
 
 const AppButton = props => {
     return (<button onMouseDown={() => {
-        openedApp = props.text;
-    }} >{props.text}</button>)
+        if (props.text == "Pomodoro Timer") {
+            setOpenedApp(0);
+        }
+        if (props.text == "Calculator") {
+            setOpenedApp(1);
+        }
+        if (props.text == "Drum App") {
+            setOpenedApp(2);
+        }
+        if (props.text == "Markdown App") {
+            setOpenedApp(3);
+        }
+        if (props.text == "Quote App") {
+            setOpenedApp(4);
+        }
+    }
+    }> {props.text}</button >)
 }
 
 const Switcher = props => {
-    if (openedApp == null) {
-        return (<p>still null</p>);
+    if (openedApp == 0) {
+        return (<TimerApp />);
     }
-    if (openedApp != null) {
-        return (<p>success!</p>);
+    if (openedApp == 1) {
+        return (<CalculatorApp />);
+    }
+    if (openedApp == 2) {
+        return (<DrumApp />);
+    }
+    if (openedApp == 3) {
+        return (<MarkdownApp />);
+    }
+    if (openedApp == 4) {
+        return (<QuoteApp />);
     }
 }
 
@@ -71,7 +97,6 @@ function App() {
         </section>
         <section class="center" id="projects">
             <Switcher />
-            <DrumApp />
         </section>
         <section class="center" id="coding-challenges">
         </section>
