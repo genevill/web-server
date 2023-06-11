@@ -8,49 +8,6 @@ import { LoadText } from './Markdown.js';
 import { useState } from 'react';
 
 
-const [openedApp, setOpenedApp] = useState(0);
-
-//----App----------------------------------------------------------------------
-
-const AppButton = props => {
-    return (<button onMouseDown={() => {
-        if (props.text == "Pomodoro Timer") {
-            setOpenedApp(0);
-        }
-        if (props.text == "Calculator") {
-            setOpenedApp(1);
-        }
-        if (props.text == "Drum App") {
-            setOpenedApp(2);
-        }
-        if (props.text == "Markdown App") {
-            setOpenedApp(3);
-        }
-        if (props.text == "Quote App") {
-            setOpenedApp(4);
-        }
-    }
-    }> {props.text}</button >)
-}
-
-const Switcher = props => {
-    if (openedApp == 0) {
-        return (<TimerApp />);
-    }
-    if (openedApp == 1) {
-        return (<CalculatorApp />);
-    }
-    if (openedApp == 2) {
-        return (<DrumApp />);
-    }
-    if (openedApp == 3) {
-        return (<MarkdownApp />);
-    }
-    if (openedApp == 4) {
-        return (<QuoteApp />);
-    }
-}
-
 //<h4>Pomodoro Timer App</h4>
 //            <TimerApp />
 //            <h4>Calculator App</h4>
@@ -63,6 +20,49 @@ const Switcher = props => {
 //            <QuoteApp />
 
 function App() {
+    const [openedApp, setOpenedApp] = useState(0);
+
+    //----App----------------------------------------------------------------------
+
+    const AppButton = props => {
+        return (<button onMouseDown={() => {
+            if (props.text == "Pomodoro Timer") {
+                setOpenedApp(0);
+            }
+            if (props.text == "Calculator") {
+                setOpenedApp(1);
+            }
+            if (props.text == "Drum App") {
+                setOpenedApp(2);
+            }
+            if (props.text == "Markdown App") {
+                setOpenedApp(3);
+            }
+            if (props.text == "Quote App") {
+                setOpenedApp(4);
+            }
+        }
+        }> {props.text}</button >)
+    }
+
+    const Switcher = props => {
+        if (openedApp == 0) {
+            return (<TimerApp />);
+        }
+        if (openedApp == 1) {
+            return (<CalculatorApp />);
+        }
+        if (openedApp == 2) {
+            return (<DrumApp />);
+        }
+        if (openedApp == 3) {
+            return (<MarkdownApp />);
+        }
+        if (openedApp == 4) {
+            return (<QuoteApp />);
+        }
+    }
+
   return (
   <div class="app">
     <div class="header">
