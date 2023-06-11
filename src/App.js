@@ -8,16 +8,7 @@ import { LoadText } from './Markdown.js';
 import { useState } from 'react';
 
 
-//<h4>Pomodoro Timer App</h4>
-//            <TimerApp />
-//            <h4>Calculator App</h4>
-//            <CalculatorApp />
-//            <h4>Drum App</h4>
-//            <DrumApp />
-//            <h4>Markdown App</h4>
-//            <MarkdownApp />
-//            <h4>Quote App</h4>
-//            <QuoteApp />
+//DRUM APP AND MARKDOWN APP ARE MESSED UP
 
 function App() {
     const [openedApp, setOpenedApp] = useState(0);
@@ -96,7 +87,7 @@ function App() {
 
         </section>
         <section class="center" id="projects">
-            <Switcher />
+            <Switcher class="center" />
         </section>
         <section class="center" id="coding-challenges">
         </section>
