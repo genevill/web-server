@@ -87,7 +87,7 @@ function App() {
 
         </section>
         <section class="center" id="projects">
-            <Switcher class="center" />
+            <Switcher class="switcher-center" />
         </section>
         <section class="center" id="coding-challenges">
         </section>

@@ -189,3 +189,9 @@ div.navborders a:hover:before, div.navborders a:hover:after {
     opacity: 1;
     transform: translateY(0px);
 }
+
+.switcher-center {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
