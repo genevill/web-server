@@ -43,7 +43,10 @@ export const QuoteApp = () => {
         url += quotes[rand + 1]
         url = url.replace(/\s/g, "%20")
         return (
-            <a class="twitter-share-button" href={url} >Tweet</a>
+            <div>
+                <a class="twitter-share-button" href={url} >Tweet</a>
+                <script type="text/javascript" async src="//platform.twitter.com/widgets.js"></script>
+            </div>
         );
     }
 
