@@ -1,5 +1,5 @@
 import './DrumMachine.css';
-import { openedApp } from './App.js';
+import { App } from './App.js';
 
 export function DrumApp() {
 
