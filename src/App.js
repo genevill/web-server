@@ -13,7 +13,7 @@ function App() {
     //----App----------------------------------------------------------------------
 
     const AppButton = props => {
-        return (<button onMouseDown={() => {
+        return (<button class="switcher-button" onMouseDown={() => {
             if (props.text == "Pomodoro Timer") {
                 setOpenedApp(0);
             }
