@@ -48,5 +48,6 @@ export const MarkdownApp = () => {
     </div>
     );
 
-    window.addEventListener("load", (event) => { LoadText(); });
+    const preview = document.getElementById("markdown-preview");
+    preview.addEventListener("load", (event) => { LoadText(); });
 }
