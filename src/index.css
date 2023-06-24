@@ -72,6 +72,10 @@ a:hover {
     padding: 1rem;
 }
 
+#about-me {
+    font-size: 1.06125rem;
+}
+
 #about-me img {
     width: clamp(125px, 15vw, 250px);
     border-radius: 50%;
