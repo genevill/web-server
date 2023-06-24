@@ -54,7 +54,6 @@ export function DrumApp() {
     }
 
     const PlaySound = () => {
-        EndSound();
         document.getElementById(drumLetters[noteIndex]).getElementsByClassName("drum-clip")[0].play();
         document.getElementById("drum-text-box").innerHTML = soundName[noteIndex];
         document.getElementById(drumLetters[noteIndex]).style.background = "#5E6A75";
