@@ -33,7 +33,9 @@ export const TimerApp = () => {
             currentBreak = breakLength * 60;
             document.getElementById("timer-beep").play();
         }
-        document.getElementById("timer-time-left").innerHTML = SessionFormat();
+        if (document.getElementById("timer-outer-box") != null) {
+            document.getElementById("timer-time-left").innerHTML = SessionFormat();
+        }
     }
 
     const PlayPause = () => {
