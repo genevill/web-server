@@ -61,8 +61,8 @@ export function DrumApp() {
 
     const EndSound = () => {
         drumLetters.map((current, index) => {
-            if (document.getElementById(drumLetters[index]) != null) {
-                document.getElementById(drumLetters[index]).style.background = "#213242";
+            if (document.getElementById("drum-machine") != null) {
+                document.getElementById(drumLetters[index]).style.background = "#213242"
             }
         });
     }
