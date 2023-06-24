@@ -4,7 +4,6 @@ import { marked } from 'marked';
 // They don't necessarily need to take props
 // This one also has an explicit return
 export const MarkdownApp = () => {
-    LoadText();
 
     const defaultText =
         "# Hello\n" +
@@ -27,11 +26,11 @@ export const MarkdownApp = () => {
     const defaultParsed = marked.parse(defaultText);
 
     const TextBox = props => {
-        return <textarea id="markdown-editor" name="markdown-editor" rows="10" onInput={LoadText}>{props.text}</textarea>
+        return (<textarea id="markdown-editor" name="markdown-editor" rows="10" onInput={LoadText}>{props.text}</textarea>)
     }
 
     const PreviewBox = props => {
-        return <p id="markdown-preview" onLoad={LoadText}></p>
+        return (<p id="markdown-preview" onLoad={LoadText}></p>)
     }
 
     function LoadText() {
