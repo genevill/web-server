@@ -207,7 +207,8 @@ div.navborders a:hover:before, div.navborders a:hover:after {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 1rem;
+    font-size:0.75rem;
+    padding: 5px;
     margin: 4px;
     cursor: pointer;
     border-radius: 15px;
