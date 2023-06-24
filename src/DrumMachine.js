@@ -41,15 +41,11 @@ export function DrumApp() {
     });
 
     document.addEventListener("keyup", (event) => {
-        if (EndSound() != null) {
-            EndSound();
-        }        
+        EndSound();
     });
 
     document.addEventListener("mouseup", (event) => {
-        if (EndSound() != null) {
-            EndSound();
-        }        
+        EndSound();
     });
 
     const TextBox = () => {
@@ -57,16 +53,18 @@ export function DrumApp() {
     }
 
     const PlaySound = () => {
-        if (EndSound() != null) {
-            EndSound();
-        }        
+        EndSound();
         document.getElementById(drumLetters[noteIndex]).getElementsByClassName("drum-clip")[0].play();
         document.getElementById("drum-text-box").innerHTML = soundName[noteIndex];
         document.getElementById(drumLetters[noteIndex]).style.background = "#5E6A75";
     }
 
     const EndSound = () => {
-        drumLetters.map((current, index) => document.getElementById(drumLetters[index]).style.background = "#213242")
+        drumLetters.map((current, index) => {
+            if (document.getElementById(drumLetters[index]) != null) {
+                document.getElementById(drumLetters[index]).style.background = "#213242";
+            }
+        });
     }
 
     const DrumPads = () => {
