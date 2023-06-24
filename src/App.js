@@ -6,17 +6,6 @@ import { QuoteApp } from './Quote.js';
 import { MarkdownApp } from './Markdown.js';
 import { useState } from 'react';
 
-//DRUM APP AND MARKDOWN APP ARE MESSED UP
-
-export var upCaret = new Image();
-upCaret.src = "https://storage.cloud.google.com/genevill/383167_caret_up_icon.png";
-export var downCaret = new Image();
-downCaret.src = "https://storage.cloud.google.com/genevill/383170_caret_down_icon.png";
-export var refresh = new Image();
-refresh.src = "https://storage.cloud.google.com/genevill/383083_refresh_reload_icon.png";
-export var playPause = new Image();
-playPause.src = "https://storage.cloud.google.com/genevill/play-pause.png";
-
 function App() {
 
     const [openedApp, setOpenedApp] = useState(0);
