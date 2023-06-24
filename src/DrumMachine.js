@@ -61,7 +61,8 @@ export function DrumApp() {
 
     const EndSound = () => {
         document.addEventListener("DOMContentLoaded", function () {
-            drumLetters.map((current, index) => document.getElementById(drumLetters[index]).style.background = "#213242")
+            console.log("HELLO");
+            drumLetters.map((current, index) => document.getElementById(drumLetters[index]).style.background = "#213242");
             //THIS IS MESSED UP
         })
     }

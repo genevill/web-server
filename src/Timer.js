@@ -90,6 +90,7 @@ export const TimerApp = () => {
             Math.floor(currentString / 60).toString().padStart(2, '0') + ":" + (currentString % 60).toString().padStart(2, '0')
         )
     }
+
     const TimerButton = props => {
         return (<button class="timer-button timer-unselectable" id={props.id} onClick={props.function}><img id="timer-buttonimg" src={props.image} /></button>)
     }
