@@ -61,6 +61,7 @@ export function DrumApp() {
 
     const EndSound = () => {
         drumLetters.map((current, index) => document.getElementById(drumLetters[index]).style.background = "#213242");
+        console.log("HELLO");
     }
 
     const DrumPads = () => {
