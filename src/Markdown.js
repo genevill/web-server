@@ -30,7 +30,7 @@ export const MarkdownApp = () => {
     }
 
     const PreviewBox = props => {
-        return (<p id="markdown-preview" onLoad={LoadText}>{marked.parse(defaultText)}</p>)
+        return (<p id="markdown-preview" onLoad={LoadText}>marked.parse(defaultText)</p>)
     }
 
     function LoadText() {
