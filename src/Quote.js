@@ -44,6 +44,7 @@ export const QuoteApp = () => {
         return (
             <a id="quote-tweet-quote" class="twitter-share-button" target="_blank" href="https://twitter.com/share?ref_src=twsrc%5Etfw" data-text={text} data-show-count="false">Tweet</a>
         );
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="dsfgsedgsdfgs" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     }
 
     return(
