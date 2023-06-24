@@ -5,6 +5,8 @@ import { marked } from 'marked';
 // This one also has an explicit return
 export const MarkdownApp = () => {
 
+    document.addEventListener("DOMContentLoaded", LoadText);
+
     const defaultText =
         "# Hello\n" +
         "## Hello\n" +
@@ -47,6 +49,4 @@ export const MarkdownApp = () => {
         </div>
         </div>
     );
-
-    document.addEventListener("DOMContentLoaded", LoadText);
 }
