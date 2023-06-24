@@ -40,6 +40,7 @@ export function DrumApp() {
         }
     });
 
+    console.log(document.getElementsByClassName("drum-outer-box").length);
     if (document.getElementsByClassName("drum-outer-box").length > 0) {
         document.addEventListener("keyup", (event) => {
             EndSound();
