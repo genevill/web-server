@@ -39,14 +39,17 @@ export function DrumApp() {
             PlaySound();
         }
     });
-    document.addEventListener("DOMContentLoaded", (event) => {
-        document.addEventListener("keyup", (event) => {
-            EndSound();
-        });
 
-        document.addEventListener("mouseup", (event) => {
-            EndSound();
-        });
+    document.addEventListener("pageshow", (event) => {
+        console.log("HELLO");
+    });
+
+    document.addEventListener("keyup", (event) => {
+        EndSound();
+    });
+
+    document.addEventListener("mouseup", (event) => {
+        EndSound();
     });
 
     const TextBox = () => {
