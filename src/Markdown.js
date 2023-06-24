@@ -5,8 +5,6 @@ import { marked } from 'marked';
 // This one also has an explicit return
 export const MarkdownApp = () => {
 
-    document.addEventListener("DOMContentLoaded", LoadText);
-
     const defaultText =
         "# Hello\n" +
         "## Hello\n" +
@@ -32,7 +30,7 @@ export const MarkdownApp = () => {
     }
 
     const PreviewBox = props => {
-        return (<p id="markdown-preview"></p>)
+        return (<p id="markdown-preview" onLoad={LoadText}></p>)
     }
 
     function LoadText() {
