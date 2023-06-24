@@ -195,10 +195,7 @@ div.navborders a:hover:before, div.navborders a:hover:after {
 }
 
 .switcher-center {
-    margin: auto;
-    display: grid;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
 }
 
 .switcher-button {
