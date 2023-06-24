@@ -61,10 +61,10 @@ export const TimerApp = () => {
         return (<button class="timer-button timer-unselectable" id={props.id} onClick={() => {
             props.idValue == "break-length" ? breakLength++ : sessionLength++;
             if (breakLength > 60) breakLength = 60; if (sessionLength > 60) sessionLength = 60;
-            //document.getElementById(props.idValue).innerHTML = (props.idValue == "break-length" ? breakLength : sessionLength);
+            document.getElementById(props.idValue).innerHTML = (props.idValue == "break-length" ? breakLength : sessionLength);
             currentSession = sessionLength * 60;
             currentBreak = breakLength * 60;
-            //document.getElementById("time-left").innerHTML = SessionFormat();
+            document.getElementById("time-left").innerHTML = SessionFormat();
         }}><img id="timer-buttonimg" src={upCaret} /></button>)
     }
 
@@ -72,11 +72,10 @@ export const TimerApp = () => {
         return (<button class="timer-button timer-unselectable" id={props.id} onClick={() => {
             props.idValue == "break-length" ? breakLength-- : sessionLength--;
             if (breakLength < 1) breakLength = 1; if (sessionLength < 1) sessionLength = 1;
-            console.log(document.getElementById(props.idValue), props.idValue);
-            //document.getElementById(props.idValue).innerHTML = (props.idValue == "break-length" ? breakLength : sessionLength);
+            document.getElementById(props.idValue).innerHTML = (props.idValue == "break-length" ? breakLength : sessionLength);
             currentSession = sessionLength * 60;
             currentBreak = breakLength * 60;
-            //document.getElementById("time-left").innerHTML = SessionFormat();
+            document.getElementById("time-left").innerHTML = SessionFormat();
         }}><img id="timer-buttonimg" src={downCaret} /></button>)
     }
 
@@ -115,10 +114,10 @@ export const TimerApp = () => {
             <div class="timer-box timer-grid-container">
                 <Text id="timer-break-label" text="Break Length" />
                 <Text id="timer-session-label" text="Session Length" />
-                <Decrease id="timer-break-decrement" idValue="break-length" />
-                <Increase id="timer-break-increment" idValue="break-length" />
-                <Increase id="timer-session-increment" idValue="session-length" />
-                <Decrease id="timer-session-decrement" idValue="session-length" />
+                <Decrease id="timer-break-decrement" idValue="timer-break-length" />
+                <Increase id="timer-break-increment" idValue="timer-break-length" />
+                <Increase id="timer-session-increment" idValue="timer-session-length" />
+                <Decrease id="timer-session-decrement" idValue="timer-session-length" />
                 <Text id="timer-break-length" text="5" />
                 <Text id="timer-session-length" text="25" />
                 <Text id="timer-timer-label" text="Session" />
