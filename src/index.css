@@ -198,7 +198,7 @@ div.navborders a:hover:before, div.navborders a:hover:after {
     display: inline-block;
 }
 
-#projects {
+#projects-center {
     width: 100vw;
     padding: 30px;
     box-sizing: border-box;
