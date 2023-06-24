@@ -45,7 +45,6 @@ export const QuoteApp = () => {
         return (
             <div>
                 <a class="twitter-share-button" href={url} >Tweet</a>
-                <script type="text/javascript" async src="//platform.twitter.com/widgets.js"></script>
             </div>
         );
     }
