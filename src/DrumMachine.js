@@ -39,13 +39,14 @@ export function DrumApp() {
             PlaySound();
         }
     });
+    document.addEventListener("DOMContentLoaded", (event) => {
+        document.addEventListener("keyup", (event) => {
+            EndSound();
+        });
 
-    document.addEventListener("keyup", (event) => {
-        EndSound();
-    });
-
-    document.addEventListener("mouseup", (event) => {
-        EndSound();
+        document.addEventListener("mouseup", (event) => {
+            EndSound();
+        });
     });
 
     const TextBox = () => {
@@ -60,11 +61,7 @@ export function DrumApp() {
     }
 
     const EndSound = () => {
-        drumLetters.map((current, index) => {
-            document.getElementById(drumLetters[index]).style.background = "#213242";
-            console.log("HELLO");
-    });
-        console.log("HELLO");
+        drumLetters.map((current, index) => document.getElementById(drumLetters[index]).style.background = "#213242");
     }
 
     const DrumPads = () => {
