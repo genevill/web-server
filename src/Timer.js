@@ -75,7 +75,7 @@ export const TimerApp = () => {
             document.getElementById(props.idValue).innerHTML = (props.idValue == "break-length" ? breakLength : sessionLength);
             currentSession = sessionLength * 60;
             currentBreak = breakLength * 60;
-            document.getElementById("time-left").innerHTML = SessionFormat();
+            //document.getElementById("time-left").innerHTML = SessionFormat();
         }}><img id="timer-buttonimg" src={downCaret} /></button>)
     }
 
