@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import './Quote.css';
 
 // They don't necessarily need to take props
 // This one also has an explicit return
@@ -50,7 +49,12 @@ export const QuoteApp = () => {
         );
     }
 
-    useEffect(<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>);
+    const TweetButton = () => {
+        return (
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        );
+
+    useEffect(TweetButton);
 
     return(
     <div class="quote-box" id="quote-box">
