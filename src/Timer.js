@@ -13,11 +13,6 @@ export const TimerApp = () => {
     var currentSession = sessionLength * 60;
     var onSession = true;
     var myTimer;
-    upCaret = "https://storage.cloud.google.com/genevill/383167_caret_up_icon.png";
-    downCaret = "https://storage.cloud.google.com/genevill/383170_caret_down_icon.png";
-    refresh = "https://storage.cloud.google.com/genevill/383083_refresh_reload_icon.png";
-    playPause = "https://storage.cloud.google.com/genevill/play-pause.png";
-
 
     const Timer = () => {
         if (document.getElementById("timer-outer-box") == null) {
