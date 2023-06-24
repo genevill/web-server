@@ -83,7 +83,6 @@ function App() {
                 <AppButton text="Quote App"></AppButton>
             </div>
             </div>
-
         </section>
         <section id="projects">
             <div class="center">

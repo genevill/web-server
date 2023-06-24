@@ -198,6 +198,10 @@ div.navborders a:hover:before, div.navborders a:hover:after {
     display: inline-block;
 }
 
+#projects {
+    width: 100%;
+}
+
 .switcher-button {
     background-color: var(--dark2-color);
     border: none;
