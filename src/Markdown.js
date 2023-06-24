@@ -26,7 +26,7 @@ export const MarkdownApp = () => {
     const defaultParsed = marked.parse(defaultText);
 
     const TextBox = props => {
-        return (<textarea id="markdown-editor" name="markdown-editor" rows="10" onInput={LoadText}>{props.text}</textarea>)
+        return (<textarea id="markdown-editor" name="markdown-editor" rows="10" onInput={LoadText}></textarea>)
     }
 
     const PreviewBox = props => {
@@ -47,4 +47,6 @@ export const MarkdownApp = () => {
         </div>
     </div>
     );
+
+    document.getElementById("markdown-editor").defaultValue = defaultText;
 }
