@@ -77,7 +77,7 @@ function App() {
                 <a id="profile-link" href="https://play.google.com/store/apps/dev?id=6083836623150592844" target="_blank">Google Developer Profile</a>
                 <a id="profile-link" href="https://github.com/genevill" target="_blank">GitHub Portfolio</a>
             </div>
-            <div>
+            <div class="switcher-center">
                 <AppButton text="Pomodoro Timer"></AppButton>
                 <AppButton text="Calculator"></AppButton>
                 <AppButton text="Drum App"></AppButton>
