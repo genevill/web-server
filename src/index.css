@@ -201,6 +201,7 @@ div.navborders a:hover:before, div.navborders a:hover:after {
 #projects {
     width: 100vw;
     padding: 30px;
+    position: relative;
 }
 
 .switcher-button {
