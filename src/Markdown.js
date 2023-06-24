@@ -30,7 +30,7 @@ export const MarkdownApp = () => {
     }
 
     const PreviewBox = props => {
-        return (<p id="markdown-preview" onLoad={LoadText}>{LoadText}</p>)
+        return (<p id="markdown-preview" onLoad={LoadText}></p>)
     }
 
     function LoadText() {
@@ -47,4 +47,6 @@ export const MarkdownApp = () => {
         </div>
     </div>
     );
+
+    if (document.readyState == "complete") LoadText();
 }
