@@ -1,4 +1,5 @@
 import './DrumMachine.css';
+import { openedApp } from './App.js';
 
 export function DrumApp() {
 
@@ -40,17 +41,23 @@ export function DrumApp() {
         }
     });
 
-    document.addEventListener("pageshow", (event) => {
-        console.log("HELLO");
-    });
+    if (openedApp == 2) {
+        document.addEventListener("keyup", (event) => {
+            EndSound();
+        });
 
-    document.addEventListener("keyup", (event) => {
-        EndSound();
-    });
+        document.addEventListener("mouseup", (event) => {
+            EndSound();
+        });
+    } else {
+        document.removeEventListener("keyup", (event) => {
+            EndSound();
+        });
 
-    document.addEventListener("mouseup", (event) => {
-        EndSound();
-    });
+        document.removeEventListener("mouseup", (event) => {
+            EndSound();
+        });
+    }
 
     const TextBox = () => {
         return <p id="drum-text-box" class="drum-unselectable">Sound Name</p>
