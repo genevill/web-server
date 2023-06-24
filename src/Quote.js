@@ -37,17 +37,15 @@ export const QuoteApp = () => {
     }
 
     function Tweet() {
-        var url = "https://twitter.com/intent/tweet?text="
-        url += quotes[rand]
-        url += "  "
-        url += quotes[rand + 1]
-        return (<a
-            id="quote-tweet-quote"
-            class="twitter-share-button"
-            target="_blank"
-            href={url}
-            data-size="large"
-        />);
+        var text = "";
+        text += quotes[rand]
+        text += "  "
+        text += quotes[rand + 1]
+        return (<div>
+            <a id="quote-tweet-quote" class="twitter-share-button" target="_blank" href="https://twitter.com/share?ref_src=twsrc%5Etfw" data-text={text} data-show-count="false">Tweet</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        );
     }
 
     return(
