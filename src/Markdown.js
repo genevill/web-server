@@ -1,5 +1,6 @@
 import './Markdown.css';
 import { marked } from 'marked';
+import { useEffect } from 'react';
 
 // They don't necessarily need to take props
 // This one also has an explicit return
@@ -36,7 +37,9 @@ export const MarkdownApp = () => {
     function LoadText() {
         document.getElementById("markdown-preview").innerHTML = marked.parse(document.getElementById("markdown-editor").value);
     }
-    
+
+    useEffect(LoadText);
+
     return (
         <div id="markdown-parent">
             <div class="markdown-box" id="markdown-box1">
@@ -44,10 +47,7 @@ export const MarkdownApp = () => {
             </div>
             <div class="markdown-box" id="markdown-box2">
                 <PreviewBox />
-                { console.log(document.getElementById("markdown-preview")) }
             </div>
         </div>
     );
-
-    
 }
