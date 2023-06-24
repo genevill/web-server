@@ -47,4 +47,6 @@ export const MarkdownApp = () => {
         </div>
     </div>
     );
+
+    p.addEventListener("load", (event) => { LoadText(); });
 }
