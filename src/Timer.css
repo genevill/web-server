@@ -25,6 +25,10 @@
     display: inline-block;
 }
 
+#timer-outer-box {
+
+}
+
 .timer-grid-container {
     display: grid;
     gap: 4px 4px;

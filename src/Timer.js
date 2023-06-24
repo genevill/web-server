@@ -110,7 +110,7 @@ export const TimerApp = () => {
     }
 
     return (
-        <div class="timer-outer-box">
+        <div class="timer-outer-box" id="timer-outer-box">
             <div class="timer-box timer-grid-container">
                 <Text id="timer-break-label" text="Break Length" />
                 <Text id="timer-session-label" text="Session Length" />
