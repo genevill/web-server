@@ -72,6 +72,7 @@ export const TimerApp = () => {
         return (<button class="timer-button timer-unselectable" id={props.id} onClick={() => {
             props.idValue == "break-length" ? breakLength-- : sessionLength--;
             if (breakLength < 1) breakLength = 1; if (sessionLength < 1) sessionLength = 1;
+            console.log(props.idValue);
             //document.getElementById(props.idValue).innerHTML = (props.idValue == "break-length" ? breakLength : sessionLength);
             currentSession = sessionLength * 60;
             currentBreak = breakLength * 60;
