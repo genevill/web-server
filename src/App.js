@@ -4,7 +4,6 @@ import { TimerApp } from './Timer.js';
 import { DrumApp } from './DrumMachine.js';
 import { QuoteApp } from './Quote.js';
 import { MarkdownApp } from './Markdown.js';
-import { LoadText } from './Markdown.js';
 import { useState } from 'react';
 
 //DRUM APP AND MARKDOWN APP ARE MESSED UP
@@ -101,9 +100,3 @@ function App() {
 }
 
 export default App;
-
-window.addEventListener("load", function () {
-    if (document.getElementById("markdown-preview") != null && document.getElementById("markdown-editor") != null) {
-        LoadText();
-    }
-});
