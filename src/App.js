@@ -11,7 +11,7 @@ import { useState } from 'react';
 //DRUM APP AND MARKDOWN APP ARE MESSED UP
 
 function App() {
-    const [openedApp, setOpenedApp] = useState(0);
+    export const [openedApp, setOpenedApp] = useState(0);
 
     //----App----------------------------------------------------------------------
 
