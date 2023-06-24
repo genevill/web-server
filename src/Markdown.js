@@ -37,16 +37,16 @@ export const MarkdownApp = () => {
         document.getElementById("markdown-preview").innerHTML = marked.parse(document.getElementById("markdown-editor").value);
     }
 
-    return(
-    <div id="markdown-parent">
-        <div class="markdown-box" id="markdown-box1">
-        <TextBox text={defaultText} />
-        </div>
-        <div class="markdown-box" id="markdown-box2">
-        <PreviewBox />
-        </div>
+    return (
+        <div id="markdown-parent">
+            <div class="markdown-box" id="markdown-box1">
+                <TextBox text={defaultText} />
+            </div>
+            <div class="markdown-box" id="markdown-box2">
+                <PreviewBox />
+            </div>
         </div>
     );
 
-    document.getElementById("markdown-preview").onload = LoadText;
+    console.log(document.readyState);
 }
