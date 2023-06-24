@@ -1,4 +1,8 @@
 import './Timer.css';
+import { upCaret } from './App.js';
+import { downCaret } from './App.js';
+import { refresh } from './App.js';
+import { playPause } from './App.js';
 
 //---Timer--------------------------------------------------------------------------
 
@@ -9,10 +13,10 @@ export const TimerApp = () => {
     var currentSession = sessionLength * 60;
     var onSession = true;
     var myTimer;
-    var upCaret = "https://storage.cloud.google.com/genevill/383167_caret_up_icon.png";
-    var downCaret = "https://storage.cloud.google.com/genevill/383170_caret_down_icon.png";
-    var refresh = "https://storage.cloud.google.com/genevill/383083_refresh_reload_icon.png";
-    var playPause = "https://storage.cloud.google.com/genevill/play-pause.png";
+    upCaret = "https://storage.cloud.google.com/genevill/383167_caret_up_icon.png";
+    downCaret = "https://storage.cloud.google.com/genevill/383170_caret_down_icon.png";
+    refresh = "https://storage.cloud.google.com/genevill/383083_refresh_reload_icon.png";
+    playPause = "https://storage.cloud.google.com/genevill/play-pause.png";
 
 
     const Timer = () => {

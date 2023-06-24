@@ -8,7 +8,13 @@ import { useState } from 'react';
 
 //DRUM APP AND MARKDOWN APP ARE MESSED UP
 
+export var upCaret = "https://storage.cloud.google.com/genevill/383167_caret_up_icon.png";
+export var downCaret = "https://storage.cloud.google.com/genevill/383170_caret_down_icon.png";
+export var refresh = "https://storage.cloud.google.com/genevill/383083_refresh_reload_icon.png";
+export var playPause = "https://storage.cloud.google.com/genevill/play-pause.png";
+
 function App() {
+
     const [openedApp, setOpenedApp] = useState(0);
 
     //----App----------------------------------------------------------------------
