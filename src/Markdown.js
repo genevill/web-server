@@ -30,7 +30,7 @@ export const MarkdownApp = () => {
     }
 
     const PreviewBox = props => {
-        return (<p id="markdown-preview" onload={LoadText}></p>)
+        return (<p id="markdown-preview"></p>)
     }
 
     function LoadText() {
@@ -47,4 +47,6 @@ export const MarkdownApp = () => {
         </div>
         </div>
     );
+
+    document.getElementById("markdown-preview").onload = LoadText;
 }
