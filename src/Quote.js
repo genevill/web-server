@@ -50,14 +50,6 @@ export const QuoteApp = () => {
         );
     }
 
-    const TweetButton = () => {
-        return (
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        );
-    }
-
-    useEffect(TweetButton);
-
     return(
     <div class="quote-box" id="quote-box">
         <div id="quote-text">
