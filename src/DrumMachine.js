@@ -40,24 +40,17 @@ export function DrumApp() {
         }
     });
 
-    console.log(document.getElementsByClassName("drum-outer-box").length);
-    if (document.getElementsByClassName("drum-outer-box").length > 0) {
-        document.addEventListener("keyup", (event) => {
+    document.addEventListener("keyup", (event) => {
+        if (EndSound() != null) {
             EndSound();
-        });
+        }        
+    });
 
-        document.addEventListener("mouseup", (event) => {
+    document.addEventListener("mouseup", (event) => {
+        if (EndSound() != null) {
             EndSound();
-        });
-    } else {
-        document.removeEventListener("keyup", (event) => {
-            EndSound();
-        });
-
-        document.removeEventListener("mouseup", (event) => {
-            EndSound();
-        });
-    }
+        }        
+    });
 
     const TextBox = () => {
         return <p id="drum-text-box" class="drum-unselectable">Sound Name</p>
