@@ -8,9 +8,9 @@ import { LoadText } from './Markdown.js';
 import { useState } from 'react';
 
 //DRUM APP AND MARKDOWN APP ARE MESSED UP
-export const [openedApp, setOpenedApp] = useState(0);
 
 function App() {
+    const [openedApp, setOpenedApp] = useState(0);
 
     //----App----------------------------------------------------------------------
 

@@ -1,5 +1,4 @@
 import './DrumMachine.css';
-import { App } from './App.js';
 
 export function DrumApp() {
 
@@ -41,7 +40,7 @@ export function DrumApp() {
         }
     });
 
-    if (openedApp == 2) {
+    if (document.getElementsByClassName("drum-outer-box") != null) {
         document.addEventListener("keyup", (event) => {
             EndSound();
         });
