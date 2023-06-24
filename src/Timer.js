@@ -16,6 +16,10 @@ export const TimerApp = () => {
 
 
     const Timer = () => {
+        if (document.getElementById("timer-outer-box") == null) {
+            clearInterval(myTimer);
+            myTimer = null;
+        }
         onSession == true ? currentSession-- : currentBreak--;
         if (currentSession == -1) {
             onSession = false;
