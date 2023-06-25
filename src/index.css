@@ -53,7 +53,7 @@ h6 {
 }
 
 #background {
-    height: 804px;
+    height: 200px;
     padding: 1rem;
     background: url('https://raw.githubusercontent.com/genevill/web-server/master/src/LostGalaxies%20Banner.png') no-repeat center top fixed;
     background-size: 100% auto;
